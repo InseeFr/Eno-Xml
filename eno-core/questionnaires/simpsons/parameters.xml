@@ -32,6 +32,7 @@
         </xforms-parameters>
         
         <fo-parameters>
+            <InitializeAllVariables>true</InitializeAllVariables>
             <Format>
                 <Orientation>0</Orientation>
                 <Columns>1</Columns>
@@ -47,7 +48,10 @@
                 </Row>
             </Table>
             <Capture>
-                <Numeric>optical</Numeric>
+                <!-- pour params default -->
+                <!--<Numeric>optical</Numeric>-->
+                <!-- pour défaut -->
+                <Numeric>manual</Numeric>
             </Capture>
             <PageBreakBetween>
                 <pdf></pdf>
@@ -60,6 +64,11 @@
         </lunatic-xml-parameters>
         
         <fodt-parameters/>
+        <Numerotation>
+            <QuestNum>module</QuestNum>
+            <SeqNum>true</SeqNum>
+            <PreQuestSymbol>true</PreQuestSymbol>
+        </Numerotation>
         
  
     </Parameters>
