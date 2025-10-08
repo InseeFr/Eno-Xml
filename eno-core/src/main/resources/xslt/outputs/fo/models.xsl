@@ -955,7 +955,7 @@
 			</xsl:call-template>
 		</xsl:variable>
 		<xsl:variable name="variable-personalization-begin" select="concat('#{if}(',$variable-name,')',$variable-name,'#{else}')"/>
-		<xsl:variable name="suffix" select="enofo:get-suffix($source-context, $languages[1])"/>
+		<xsl:variable name="suffix" select="enofo:get-suffix($source-context, $languages[1],$loop-navigation)"/>
 
 		<xsl:if test="$label != ''">
 			<xsl:choose>

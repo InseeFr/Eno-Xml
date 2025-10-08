@@ -905,6 +905,22 @@
 
     <xd:doc>
         <xd:desc>
+            <xd:p>Defining getter get-suffix-conditioning-variables.</xd:p>
+            <xd:p>Function that returns the list of the variables of the unit of a number.</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="*[ends-with(name(),'DomainReference') or ends-with(name(),'Domain')]" mode="enoddi:get-suffix-conditioning-variables">
+        <xsl:param name="language" tunnel="yes"/>
+        <xsl:variable name="variable-list" as="xs:string *">
+            <xsl:call-template name="enoddi:variables-from-label">
+                <xsl:with-param name="label" select="eno:serialize(enoddi:get-suffix(.,$language))"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:sequence select="$variable-list"/>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc>
             <xd:p>Defining getter get-computated-maximum-lines-variables.</xd:p>
             <xd:p>Function that returns the list of the variables of the ConditionForContinuation of a dynamic array.</xd:p>
         </xd:desc>
