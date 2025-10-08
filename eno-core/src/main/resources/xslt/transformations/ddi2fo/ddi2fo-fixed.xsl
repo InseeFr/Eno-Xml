@@ -41,9 +41,9 @@
     <xsl:param name="parameters-node" as="node()" required="no">
         <empty/>
     </xsl:param>
-    
+
     <xsl:variable name="page-model-default" select="doc('../../../xslt/post-processing/fo/page-model/page-model-default.fo')"/>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>A variable is created to build a set of label resources in different languages.</xd:p>
@@ -53,7 +53,7 @@
     <xsl:variable name="labels-resource">
         <xsl:sequence select="eno:build-labels-resource($labels-folder,enofo:get-form-languages(//d:Sequence[d:TypeOfSequence/text()='template']))"/>
     </xsl:variable>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>The properties and parameters files are charged as xml trees.</xd:p>
@@ -70,7 +70,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    
+
     <xd:doc>
         <xd:desc>Variables from propertiers and parameters</xd:desc>
     </xd:doc>
@@ -204,9 +204,9 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    
+
    <xd:doc>
-      <xd:desc>Variables from propertiers and parameters : copying style xml tree structure with two changes : 
+      <xd:desc>Variables from propertiers and parameters : copying style xml tree structure with two changes :
          - style attributes become attributes of the style-set tag
          - overloading properties with parameters when provided by the study  </xd:desc>
    </xd:doc>
@@ -322,7 +322,7 @@
         </xsl:variable>
         <xsl:sequence select="$tempLabel"/>
     </xsl:function>
-    
+
     <xsl:function name="enofo:get-fixed-value">
         <xsl:param name="context" as="item()"/>
         <xsl:param name="language"/>
@@ -347,35 +347,28 @@
             </xsl:apply-templates>
         </xsl:variable>
         <xsl:sequence select="$tempLabel"/>
-    </xsl:function>    
+    </xsl:function>
 
     <xsl:template match="*" mode="enofo:format-label" priority="-1">
         <xsl:copy>
             <xsl:apply-templates select="node()|@*" mode="enofo:format-label"/>
         </xsl:copy>
     </xsl:template>
-     
+
     <xsl:template match="xhtml:p | xhtml:span" mode="enofo:format-label">
         <xsl:apply-templates select="node()" mode="enofo:format-label"/>
     </xsl:template>
-    
+
     <xsl:template match="xhtml:span[@class='block']" mode="enofo:format-label">
         <xsl:element name="fo:block">
             <xsl:apply-templates select="node()" mode="enofo:format-label"/>
         </xsl:element>
     </xsl:template>
-    
-<!--
-    <xsl:template match="*[not(descendant-or-self::xhtml:*)]" mode="enofo:format-label">
-        <xsl:copy>
-            <xsl:apply-templates select="node()|@*" mode="enofo:format-label"/>
-        </xsl:copy>
-    </xsl:template>-->
 
     <xsl:template match="text()" mode="enofo:format-label">
         <xsl:param name="label-variables" tunnel="yes"/>
         <xsl:param name="loop-navigation" tunnel="yes" as="node()"/>
-        
+
         <xsl:if test="substring(.,1,1)=' '">
             <xsl:text xml:space="preserve"> </xsl:text>
         </xsl:if>
@@ -395,7 +388,7 @@
         <xsl:param name="loop-navigation" as="node()"/>
 
         <xsl:variable name="quot"><xsl:text>"</xsl:text></xsl:variable>
-        
+
         <xsl:choose>
             <xsl:when test="contains($label,$conditioning-variable-begin) and contains(substring-after($label,$conditioning-variable-begin),$conditioning-variable-end)">
                 <xsl:variable name="label-before-temp" select="substring-before($label,$conditioning-variable-begin)"/>
@@ -437,58 +430,70 @@
                     <xsl:call-template name="enoddi:get-business-name">
                         <xsl:with-param name="variable" select="$variable-name"/>
                     </xsl:call-template>
-                    <xsl:value-of select="'}'"/>                    
+                    <xsl:value-of select="'}'"/>
                 </xsl:variable>
                 <!-- gestion de cast(variable,string) : début -->
                 <!-- ça ne marche pas, car ce que je cherche est déjà trouvé dans ce qui précède -->
                 <!-- il faut éviter le analyze-srting inutile -->
-                <xsl:analyze-string select="$label-before-temp" regex="^(.*)(cast *\( *)?nvl *\( *$">
-                    <!-- présence du nvl -->
-                    <xsl:matching-substring>
-                        <!-- suppression des | et des guillemets dans le début de la chaîne -->
-                        <xsl:value-of select="replace(replace(replace(replace(regex-group(1),' \|',''),'\| ',''),'\|',''),$quot,'')"/>
-                        <!-- affichage de la partie concernant la variable -->
-                        <xsl:variable name="default-value" select="substring-before(substring-after($label-after-temp,$quot),$quot)"/>
-                        <xsl:value-of select="concat('#{if}(',$variable-new-name,')',$variable-new-name,'#{else}',$default-value,'#{end}')"/>
-                        <xsl:variable name="label-after">
-                            <xsl:choose>
-                                <xsl:when test="string-length(regex-group(2)) > 0">
-                                    <xsl:value-of select="substring-after($label-after-temp,')')"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$label-after-temp"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
+                <xsl:choose>
+                    <xsl:when test="$label-before-temp = ''">
+                        <xsl:value-of select="$variable-new-name"/>
                         <xsl:call-template name="velocity-label">
-                            <xsl:with-param name="label" select="$label-after"/>
+                            <xsl:with-param name="label" select="$label-after-temp"/>
                             <xsl:with-param name="variables" select="$variables"/>
                             <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
                         </xsl:call-template>
-                    </xsl:matching-substring>
-                    <xsl:non-matching-substring>
-                        <xsl:analyze-string select="$label-before-temp" regex="^(.*)cast *\( *$">
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:analyze-string select="$label-before-temp" regex="^(.*)(cast *\( *)?nvl *\( *$">
+                            <!-- présence du nvl -->
                             <xsl:matching-substring>
+                                <!-- suppression des | et des guillemets dans le début de la chaîne -->
                                 <xsl:value-of select="replace(replace(replace(replace(regex-group(1),' \|',''),'\| ',''),'\|',''),$quot,'')"/>
-                                <xsl:value-of select="$variable-new-name"/>
+                                <!-- affichage de la partie concernant la variable -->
+                                <xsl:variable name="default-value" select="substring-before(substring-after($label-after-temp,$quot),$quot)"/>
+                                <xsl:value-of select="concat('#{if}(',$variable-new-name,')',$variable-new-name,'#{else}',$default-value,'#{end}')"/>
+                                <xsl:variable name="label-after">
+                                    <xsl:choose>
+                                        <xsl:when test="string-length(regex-group(2)) > 0">
+                                            <xsl:value-of select="substring-after($label-after-temp,')')"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="$label-after-temp"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
                                 <xsl:call-template name="velocity-label">
-                                    <xsl:with-param name="label" select="substring-after($label-after-temp,')')"/>
+                                    <xsl:with-param name="label" select="$label-after"/>
                                     <xsl:with-param name="variables" select="$variables"/>
                                     <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
                                 </xsl:call-template>
                             </xsl:matching-substring>
                             <xsl:non-matching-substring>
-                                <xsl:value-of select="replace(replace(replace(replace($label-before-temp,' \|',''),'\| ',''),'\|',''),$quot,'')"/>
-                                <xsl:value-of select="$variable-new-name"/>
-                                <xsl:call-template name="velocity-label">
-                                    <xsl:with-param name="label" select="$label-after-temp"/>
-                                    <xsl:with-param name="variables" select="$variables"/>
-                                    <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
-                                </xsl:call-template>
+                                <xsl:analyze-string select="$label-before-temp" regex="^(.*)cast *\( *$">
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="replace(replace(replace(replace(regex-group(1),' \|',''),'\| ',''),'\|',''),$quot,'')"/>
+                                        <xsl:value-of select="$variable-new-name"/>
+                                        <xsl:call-template name="velocity-label">
+                                            <xsl:with-param name="label" select="substring-after($label-after-temp,')')"/>
+                                            <xsl:with-param name="variables" select="$variables"/>
+                                            <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+                                        </xsl:call-template>
+                                    </xsl:matching-substring>
+                                    <xsl:non-matching-substring>
+                                        <xsl:value-of select="replace(replace(replace(replace($label-before-temp,' \|',''),'\| ',''),'\|',''),$quot,'')"/>
+                                        <xsl:value-of select="$variable-new-name"/>
+                                        <xsl:call-template name="velocity-label">
+                                            <xsl:with-param name="label" select="$label-after-temp"/>
+                                            <xsl:with-param name="variables" select="$variables"/>
+                                            <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+                                        </xsl:call-template>
+                                    </xsl:non-matching-substring>
+                                </xsl:analyze-string>
                             </xsl:non-matching-substring>
                         </xsl:analyze-string>
-                    </xsl:non-matching-substring>
-                </xsl:analyze-string>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <!-- suppression des | et des guillemets -->
@@ -496,7 +501,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="xhtml:i" mode="enofo:format-label">
         <xsl:element name="fo:inline">
             <xsl:attribute name="font-style" select="'italic'"/>
