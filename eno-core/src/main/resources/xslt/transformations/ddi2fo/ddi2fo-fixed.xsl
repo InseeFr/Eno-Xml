@@ -347,7 +347,20 @@
             </xsl:apply-templates>
         </xsl:variable>
         <xsl:sequence select="$tempLabel"/>
-    </xsl:function>    
+    </xsl:function>
+    
+    <xsl:function name="enofo:get-suffix">
+        <xsl:param name="context" as="item()"/>
+        <xsl:param name="language"/>
+        <xsl:param name="loop-navigation" as="node()"/>
+        <xsl:variable name="tempLabel">
+            <xsl:apply-templates select="enoddi:get-suffix($context,$language)" mode="enofo:format-label">
+                <xsl:with-param name="label-variables" select="enoddi:get-suffix-conditioning-variables($context,$language)" tunnel="yes"/>
+                <xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:variable>
+        <xsl:sequence select="$tempLabel"/>
+    </xsl:function>
 
     <xsl:template match="*" mode="enofo:format-label" priority="-1">
         <xsl:copy>

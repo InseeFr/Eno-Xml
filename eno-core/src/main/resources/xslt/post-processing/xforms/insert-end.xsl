@@ -361,6 +361,7 @@
                                             </xsl:element>    
                                         </xsl:for-each>
                                         <xf:setvalue ref="instance('fr-form-util')/cliquable" value="string('oui')"/>
+                                        <xf:setvalue ref="instance('fr-form-instance')/Util/DateTime" value="fn:format-dateTime(fn:current-dateTime(),'[D01]-[M01]-[Y0001] à [H01]:[m01]')"/>
                                         <xf:setvalue ref="instance('fr-form-instance')/Util/CurrentSection" value="1"/>
                                         <xf:setvalue ref="instance('fr-form-instance')/Util/CurrentSectionName" value="instance('fr-form-util')/Pages/*[1]/name()"/>
                                         <xf:toggle case="{string('{instance(''fr-form-instance'')/Util/CurrentSection}')}"/>
