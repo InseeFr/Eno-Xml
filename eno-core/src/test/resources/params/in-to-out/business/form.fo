@@ -1780,11 +1780,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -1888,11 +1886,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -1996,11 +1992,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2104,11 +2098,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2212,11 +2204,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2320,11 +2310,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2428,11 +2416,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2536,11 +2522,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2644,11 +2628,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2752,11 +2734,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2860,11 +2840,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -2968,11 +2946,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -3076,11 +3052,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
@@ -3184,11 +3158,9 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>
-                              <fo:block-container height="8mm" width="50mm">
-                                 <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else} #{end}</fo:block>
-                              </fo:block-container>
-                           </fo:block>
+                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                                 <fo:block> </fo:block>
+                              </fo:block-container>#{end}</fo:block>
                         </fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"

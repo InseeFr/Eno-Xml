@@ -575,14 +575,12 @@
                    margin-top="9pt"
                    margin-bottom="3pt"
                    text-align="justify">➡ 3. In which state do The Simpsons reside?</fo:block>
-         <fo:block id="STATE" page-break-inside="avoid">
-            <fo:block-container height="8mm"
+         <fo:block id="STATE" page-break-inside="avoid">#{if}($!{STATE})$!{STATE}#{else}<fo:block-container height="8mm"
                                 border-color="black"
                                 border-style="solid"
                                 width="100%">
-               <fo:block>#{if}($!{STATE})$!{STATE}#{else} #{end}</fo:block>
-            </fo:block-container>
-         </fo:block>
+               <fo:block> </fo:block>
+            </fo:block-container>#{end}</fo:block>
          <fo:block page-break-inside="avoid"
                    keep-with-next="always"
                    keep-together.within-column="always"
@@ -915,11 +913,9 @@
                                     border="0mm"
                                     padding-top="0mm"
                                     padding-bottom="0mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block border-color="black" border-style="solid" width="50mm">#{if}($!{NUCLEAR_CHARACTER1})$!{NUCLEAR_CHARACTER1}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{NUCLEAR_CHARACTER1})$!{NUCLEAR_CHARACTER1}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block border-color="black" border-style="solid" width="50mm"> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                   <fo:table-row border-color="black">
@@ -945,11 +941,9 @@
                                     border="0mm"
                                     padding-top="0mm"
                                     padding-bottom="0mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block border-color="black" border-style="solid" width="50mm">#{if}($!{NUCLEAR_CHARACTER2})$!{NUCLEAR_CHARACTER2}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{NUCLEAR_CHARACTER2})$!{NUCLEAR_CHARACTER2}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block border-color="black" border-style="solid" width="50mm"> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                   <fo:table-row border-color="black">
@@ -975,11 +969,9 @@
                                     border="0mm"
                                     padding-top="0mm"
                                     padding-bottom="0mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block border-color="black" border-style="solid" width="50mm">#{if}($!{NUCLEAR_CHARACTER3})$!{NUCLEAR_CHARACTER3}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{NUCLEAR_CHARACTER3})$!{NUCLEAR_CHARACTER3}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block border-color="black" border-style="solid" width="50mm"> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                   <fo:table-row border-color="black">
@@ -1005,11 +997,9 @@
                                     border="0mm"
                                     padding-top="0mm"
                                     padding-bottom="0mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block border-color="black" border-style="solid" width="50mm">#{if}($!{NUCLEAR_CHARACTER4})$!{NUCLEAR_CHARACTER4}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{NUCLEAR_CHARACTER4})$!{NUCLEAR_CHARACTER4}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block border-color="black" border-style="solid" width="50mm"> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                   </fo:table-row>
                </fo:table-body>
@@ -1820,11 +1810,9 @@
                                     border-color="black"
                                     border-style="solid"
                                     padding="1mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block>#{if}($!{CLOWNING11})$!{CLOWNING11}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{CLOWNING11})$!{CLOWNING11}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
                                     border-color="black"
@@ -1859,11 +1847,9 @@
                                     border-color="black"
                                     border-style="solid"
                                     padding="1mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block>#{if}($!{CLOWNING21})$!{CLOWNING21}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{CLOWNING21})$!{CLOWNING21}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
                                     border-color="black"
@@ -1898,11 +1884,9 @@
                                     border-color="black"
                                     border-style="solid"
                                     padding="1mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block>#{if}($!{CLOWNING31})$!{CLOWNING31}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{CLOWNING31})$!{CLOWNING31}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
                                     border-color="black"
@@ -1937,11 +1921,9 @@
                                     border-color="black"
                                     border-style="solid"
                                     padding="1mm">
-                        <fo:block>
-                           <fo:block-container height="8mm" width="50mm">
-                              <fo:block>#{if}($!{CLOWNING41})$!{CLOWNING41}#{else} #{end}</fo:block>
-                           </fo:block-container>
-                        </fo:block>
+                        <fo:block>#{if}($!{CLOWNING41})$!{CLOWNING41}#{else}<fo:block-container height="8mm" width="50mm">
+                              <fo:block> </fo:block>
+                           </fo:block-container>#{end}</fo:block>
                      </fo:table-cell>
                      <fo:table-cell text-align="left"
                                     border-color="black"
