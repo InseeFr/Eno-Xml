@@ -1495,9 +1495,8 @@
 		<xsl:param name="variables" as="node()"/>
 		<xsl:param name="loop-navigation" as="node()"/>
 		
-		<xsl:variable name="quot">
-			<xsl:text>&quot;</xsl:text>
-		</xsl:variable>
+		<xsl:variable name="quot"><xsl:text>&quot;</xsl:text></xsl:variable>
+		<xsl:variable name="apos"><xsl:text>'</xsl:text></xsl:variable>
 
 		<xsl:choose>
 			<xsl:when test="$variables/Variable">
@@ -1515,9 +1514,8 @@
 					then : blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c' or !${var_name}) blibli
 					else : blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c') blibli
 				-->
-				<xsl:analyze-string select="$formula" regex="^(.*)nvl *( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\) *in *\{{(.+)\}}(.*)$">
+				<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\) *in *\{{(.+)\}}(.*)$">
 					<xsl:matching-substring>
-						<xsl:variable name="apos"><xsl:text>'</xsl:text></xsl:variable>
 						<xsl:variable name="formula">
 							<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' eq ')"/>
 							<xsl:value-of select="string-join(tokenize(replace(regex-group(2),$quot,$apos),','),concat(' or ',$variable-business-name,' eq '))"/>
@@ -1538,7 +1536,6 @@
 							blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c') blibli-->
 						<xsl:analyze-string select="$formula" regex="^(.*){$variable-initial-name} *in *\{{(.+)\}}(.*)$">
 							<xsl:matching-substring>
-								<xsl:variable name="apos"><xsl:text>'</xsl:text></xsl:variable>
 								<xsl:call-template name="replaceVariablesInFormula">
 									<xsl:with-param name="formula">
 										<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' eq ')"/>
@@ -1552,9 +1549,8 @@
 							<xsl:non-matching-substring>
 								<!-- blablanvl(¤var_id¤,"val_par_defaut")blibli
 									becomes: blabla (#{if} (${var_name}) $!{var_name} #{else} val_par_defaut #{end}blibli -->
-								<xsl:analyze-string select="$formula" regex="^(.*)nvl *( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\)(.*)$">
+								<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\)(.*)$">
 									<xsl:matching-substring>
-										<xsl:variable name="apos"><xsl:text>'</xsl:text></xsl:variable>
 										<xsl:call-template name="replaceVariablesInFormula">
 											<xsl:with-param name="formula" select="concat(regex-group(1),'#{if}(',$variable-business-name,')',$variable-business-name,'#{else}',$apos,regex-group(2),$apos,'#{end}',regex-group(3))"/>
 											<xsl:with-param name="variables" select="$variables"/>

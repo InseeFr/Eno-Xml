@@ -465,7 +465,11 @@
                                 <xsl:value-of select="replace(replace(replace(replace(regex-group(1),' \|',''),'\| ',''),'\|',''),$quot,'')"/>
                                 <!-- affichage de la partie concernant la variable -->
                                 <xsl:variable name="default-value" select="substring-before(substring-after($label-after-temp,$quot),$quot)"/>
-                                <xsl:value-of select="concat('#{if}(',$variable-new-name,')',$variable-new-name,'#{else}',$default-value,'#{end}')"/>
+                                <xsl:value-of select="concat('#{if}(',$variable-new-name,')',$variable-new-name)"/>
+                                <xsl:if test="$default-value != ''">
+                                    <xsl:value-of select="concat('#{else}',$default-value)"/>    
+                                </xsl:if>
+                                <xsl:value-of select="'#{end}'"/>
                                 <xsl:variable name="label-after">
                                     <xsl:choose>
                                         <xsl:when test="string-length(regex-group(2)) > 0">
