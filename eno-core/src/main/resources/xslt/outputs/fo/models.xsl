@@ -1518,7 +1518,7 @@
 					<xsl:matching-substring>
 						<xsl:variable name="formula">
 							<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' eq ')"/>
-							<xsl:value-of select="string-join(tokenize(replace(regex-group(2),$quot,$apos),','),concat(' or ',$variable-business-name,' eq '))"/>
+							<xsl:value-of select="string-join(tokenize(replace(regex-group(3),$quot,$apos),','),concat(' or ',$variable-business-name,' eq '))"/>
 							<xsl:if test="contains(tokenize(replace(regex-group(2),$quot,''),','),regex-group(3))">
 								<xsl:value-of select="concat(' or !',$variable-business-name)"/>
 							</xsl:if>

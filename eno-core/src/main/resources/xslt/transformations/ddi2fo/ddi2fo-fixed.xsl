@@ -473,10 +473,10 @@
                                 <xsl:variable name="label-after">
                                     <xsl:choose>
                                         <xsl:when test="string-length(regex-group(2)) > 0">
-                                            <xsl:value-of select="substring-after($label-after-temp,')')"/>
+                                            <xsl:value-of select="substring-after(substring-after($label-after-temp,')'),')')"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of select="$label-after-temp"/>
+                                            <xsl:value-of select="substring-after($label-after-temp,')')"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:variable>
