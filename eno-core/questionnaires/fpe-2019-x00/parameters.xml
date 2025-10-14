@@ -1,5 +1,4 @@
 <ENOParameters>
-    
     <Parameters>
         
         <Context>household</Context>
@@ -25,9 +24,6 @@
                 <Orientation>0</Orientation>
                 <Columns>2</Columns>
             </Format>
-            <Capture>
-                <Numeric>optical</Numeric>
-            </Capture>
             <Roster>
                 <Row>
                     <DefaultSize>8</DefaultSize>
@@ -38,6 +34,9 @@
                 <DefaultOccurrence>8</DefaultOccurrence>
                 <MinimumEmptyOccurrence>0</MinimumEmptyOccurrence>
             </Loop>
+            <Capture>
+                <Numeric>optical</Numeric>
+            </Capture>
             <TextArea>
                 <Row>
                     <DefaultSize>5</DefaultSize>
@@ -48,13 +47,18 @@
                     <DefaultSize>19</DefaultSize>
                 </Row>
             </Table>
-            <AccompanyingMail>relanceCOLEM</AccompanyingMail>            
+            <AccompanyingMail>relanceCOLEM</AccompanyingMail>
+            <InitializeAllVariables>true</InitializeAllVariables>
         </fo-parameters>
         
         <lunatic-xml-parameters/>
         
-        <fodt-parameters/>  
-        
+        <fodt-parameters/>
+        <Numerotation>
+            <QuestNum>template</QuestNum>
+            <SeqNum>true</SeqNum>
+            <PreQuestSymbol>true</PreQuestSymbol>
+        </Numerotation>
     </Parameters>
     
 </ENOParameters>
