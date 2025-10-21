@@ -556,7 +556,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-      
+
     <xsl:template match="*" mode="enoddi:get-generation-instruction">
         <xsl:param name="variable" tunnel="yes"/>
         <xsl:variable
@@ -645,13 +645,11 @@
                 </xsl:with-param>
             </xsl:call-template>
         </xsl:variable>
-        
-        <xsl:for-each select="//d:Loop[d:ControlConstructReference[d:IfThenElse/d:IfCondition/r:Command/r:Binding/r:SourceParameterReference/r:ID = $modified-variables//Variable 
+        <xsl:for-each select="//d:Loop[d:ControlConstructReference[d:IfThenElse/d:IfCondition/r:Command/r:Binding/r:SourceParameterReference/r:ID = $modified-variables//Variable
                                                                and not(preceding-sibling::d:ControlConstructReference or following-sibling::d:ControlConstructReference)]]">
             <xsl:sequence select="."/>
         </xsl:for-each>
     </xsl:template>
-    
 
     <xd:doc>
         <xd:desc>
@@ -921,6 +919,38 @@
 
     <xd:doc>
         <xd:desc>
+            <xd:p>Defining getter get-cell-response-filter-conditioning-variables.</xd:p>
+            <xd:p>Function that returns the list of the variables of the filter of the cell containing a response.</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="*" mode="enoddi:get-cell-response-filter-conditioning-variables">
+        <xsl:param name="language" tunnel="yes"/>
+        <xsl:variable name="variable-list" as="xs:string *">
+            <xsl:call-template name="enoddi:variables-from-label">
+                <xsl:with-param name="label" select="eno:serialize(enoddi:get-cell-response-filter(.,$language))"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:sequence select="$variable-list"/>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Defining getter get-cell-response-readonly-conditioning-variables.</xd:p>
+            <xd:p>Function that returns the list of the variables of the condition readonly of the cell containing a response.</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="*" mode="enoddi:get-cell-response-readonly-conditioning-variables">
+        <xsl:param name="language" tunnel="yes"/>
+        <xsl:variable name="variable-list" as="xs:string *">
+            <xsl:call-template name="enoddi:variables-from-label">
+                <xsl:with-param name="label" select="eno:serialize(enoddi:get-cell-response-readonly(.,$language))"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:sequence select="$variable-list"/>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc>
             <xd:p>Defining getter get-computated-maximum-lines-variables.</xd:p>
             <xd:p>Function that returns the list of the variables of the ConditionForContinuation of a dynamic array.</xd:p>
         </xd:desc>
@@ -934,7 +964,6 @@
         </xsl:variable>
         <xsl:sequence select="$variable-list"/>
     </xsl:template>
-    
 
     <xsl:template name="enoddi:variables-from-label">
         <xsl:param name="label"/>
@@ -1215,7 +1244,7 @@
             <xsl:with-param name="variable" select="enoddi:get-id(.)"/>
         </xsl:call-template>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Defining getter get-variable-business-name.</xd:p>
@@ -1224,7 +1253,6 @@
     </xd:doc>
     <xsl:template match="*" mode="enoddi:get-variable-business-name">
         <xsl:param name="variable" tunnel="yes"/>
-        
         <xsl:call-template name="enoddi:get-business-name">
             <xsl:with-param name="variable" select="$variable"/>
         </xsl:call-template>
@@ -1357,12 +1385,12 @@
     </xd:doc>
     <xsl:template match="*" mode="enoddi:get-variable-representation">
         <xsl:param name="variable" tunnel="yes"/>
-        
+
         <xsl:variable name="variable-representation">
             <xsl:choose>
                 <!-- collected variable -->
                 <xsl:when test="$root//l:VariableScheme//l:Variable/r:SourceParameterReference/r:ID = $variable">
-                    <xsl:if test="$root//l:VariableScheme//l:Variable[r:SourceParameterReference/r:ID = $variable]/l:VariableRepresentation/*">                        
+                    <xsl:if test="$root//l:VariableScheme//l:Variable[r:SourceParameterReference/r:ID = $variable]/l:VariableRepresentation/*">
                         <xsl:value-of select="enoddi:get-type($root//l:VariableScheme//l:Variable[r:SourceParameterReference/r:ID = $variable]/l:VariableRepresentation/*)"/>
                     </xsl:if>
                 </xsl:when>
@@ -1370,17 +1398,17 @@
                 <xsl:when test="$root//l:VariableScheme//l:Variable//r:ProcessingInstructionReference/r:Binding/r:SourceParameterReference/r:ID = $variable">
                     <xsl:if test="$root//l:VariableScheme//l:Variable[descendant::r:ProcessingInstructionReference/r:Binding/r:SourceParameterReference/r:ID = $variable]/l:VariableRepresentation/*[not(self::r:ProcessingInstructionReference)]">
                         <xsl:value-of select="enoddi:get-type($root//l:VariableScheme//l:Variable[descendant::r:ProcessingInstructionReference/r:Binding/r:SourceParameterReference/r:ID = $variable]/l:VariableRepresentation/*[not(self::r:ProcessingInstructionReference)])"/>
-                    </xsl:if>                    
+                    </xsl:if>
                 </xsl:when>
                 <!-- external variable -->
                 <xsl:when test="$root//l:VariableScheme//l:Variable[not(r:QuestionReference or r:SourceParameterReference or descendant::r:ProcessingInstructionReference)]/l:VariableName/r:String= $variable">
                     <!-- VariableRepresentation may be empty for external variables -->
                     <xsl:if test="$root//l:VariableScheme//l:Variable[l:VariableName/r:String= $variable]/l:VariableRepresentation/*">
-                        <xsl:value-of select="enoddi:get-type($root//l:VariableScheme//l:Variable[l:VariableName/r:String= $variable]/l:VariableRepresentation/*)"/>    
+                        <xsl:value-of select="enoddi:get-type($root//l:VariableScheme//l:Variable[l:VariableName/r:String= $variable]/l:VariableRepresentation/*)"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise/>
-            </xsl:choose>    
+            </xsl:choose>
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="$variable-representation != ''">
@@ -1391,7 +1419,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Defining getter get-instruction-by-anchor-ref.</xd:p>
@@ -1427,7 +1455,7 @@
         mode="enoddi:get-next-filter-description">
         <xsl:sequence select="d:ExternalAid[r:OtherMaterial/r:Description/r:Content/xhtml:div/@class='FlowControl']"/>
     </xsl:template>
-    
+
     <xsl:template match="d:ExternalAid" mode="enoddi:get-flowcontrol-target">
         <xsl:variable name="idTarget" select="r:OtherMaterial/r:Description/r:Content/xhtml:div[@class='FlowControl']/xhtml:div[@class='IfTrue']/text()"/>
         <xsl:variable name="target" select="$root//*[r:ID=$idTarget]"/>
@@ -1446,7 +1474,7 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Get Filter linked to a question</xd:p>
@@ -1551,7 +1579,7 @@
     <xsl:template match="*" mode="enoddi:get-previous-statement-item">
         <xsl:sequence select="ancestor::d:QuestionConstruct/parent::d:ControlConstructReference/preceding-sibling::d:ControlConstructReference/d:StatementItem[parent::d:ControlConstructReference/following-sibling::d:ControlConstructReference[descendant::d:QuestionConstruct][1]/descendant::d:QuestionConstruct/r:ID=current()/ancestor::d:QuestionConstruct/r:ID]"></xsl:sequence>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Function for retrieving the id (modele) of a questionnaire.</xd:p>
@@ -1595,7 +1623,7 @@
         <xsl:sequence select="//l:VariableScheme//l:VariableGroup[r:BasedOnObject/r:BasedOnReference[1]/r:ID=current()/parent::d:QuestionGrid/r:ID]
             /r:VariableReference/l:Variable[not(r:QuestionReference or r:SourceParameterReference or descendant::r:ProcessingInstructionReference)]"/>
     </xsl:template>
-    
+
     <xd:doc>
         <xd:desc>
             <xd:p>Name template get-controlconstructreference-name that returns the business name of the variable linked to the DDI ID of the ControlConstructReference.</xd:p>
