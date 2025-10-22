@@ -1141,6 +1141,40 @@
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>*[contains(name(),&apos;Domain&apos;) and ancestor::d:QuestionGrid][../../../d:CellLabel[eno:serialize(d:GridAttachment/d:CellCoordinatesAsDefined)=eno:serialize(current()/following-sibling::d:GridAttachment/d:CellCoordinatesAsDefined)]/r:TypeOfLabel=&apos;filteredcell&apos;]</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:get-cell-response-filter</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>../../../d:CellLabel[eno:serialize(d:GridAttachment/d:CellCoordinatesAsDefined)=eno:serialize(current()/following-sibling::d:GridAttachment/d:CellCoordinatesAsDefined) and r:TypeOfLabel=&apos;filteredcell&apos;]/r:Content</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce31" office:value-type="string" calcext:value-type="string">
+      <text:p>lang-choice</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>The filter of a cell containing a response</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>*[contains(name(),&apos;Domain&apos;) and ancestor::d:QuestionGrid][../../../d:CellLabel[eno:serialize(d:GridAttachment/d:CellCoordinatesAsDefined)=eno:serialize(current()/following-sibling::d:GridAttachment/d:CellCoordinatesAsDefined)]/r:TypeOfLabel=&apos;readonlyresponsecell&apos;]</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:get-cell-response-readonly</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>../../../d:CellLabel[eno:serialize(d:GridAttachment/d:CellCoordinatesAsDefined)=eno:serialize(current()/following-sibling::d:GridAttachment/d:CellCoordinatesAsDefined) and r:TypeOfLabel=&apos;readonlyresponsecell&apos;]/r:Content</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce31" office:value-type="string" calcext:value-type="string">
+      <text:p>lang-choice</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>The condition to make readonly a cell containing a response</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
      <table:table-cell table:style-name="Default"/>
      <table:table-cell/>
      <table:table-cell table:style-name="ce31" table:number-columns-repeated="2"/>
