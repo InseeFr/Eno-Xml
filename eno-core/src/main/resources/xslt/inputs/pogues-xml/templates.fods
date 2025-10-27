@@ -1474,7 +1474,7 @@
     </table:table-row>
     <table:table-row table:style-name="ro2">
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>pogues:Loop[pogues:Maximum and not(pogues:maximum and not(pogues:size)]</text:p>
+      <text:p>pogues:Loop[pogues:Maximum and not(pogues:maximum) and not(pogues:size)]</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>enopogues:get-maximum-occurrences</text:p>
@@ -1491,7 +1491,7 @@
     </table:table-row>
     <table:table-row table:style-name="ro2">
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>pogues:Loop[pogues:Minimum and not(pogues:minimum and not(pogues:size)]</text:p>
+      <text:p>pogues:Loop[pogues:Minimum and not(pogues:minimum) and not(pogues:size)]</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>enopogues:get-minimum-occurrences</text:p>
