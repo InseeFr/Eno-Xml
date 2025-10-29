@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>fr.insee.eno</groupId>
-  <artifactId>eno</artifactId>
-  <packaging>pom</packaging>
-  <version>${eno.version}</version>
-  <name>eno</name>
-  <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <properties>
-    <eno.version>2.23.1</eno.version>
-    <java.version>17</java.version>
-    <project.encoding>UTF-8</project.encoding>
-  </properties>  
+    <groupId>fr.insee.eno</groupId>
+    <artifactId>eno</artifactId>
+    <packaging>pom</packaging>
+    <version>${eno.version}</version>
+    <name>eno</name>
 
-	<!-- Spring Boot parent -->
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.6</version>
-	</parent>
-  <modules>
-    <module>eno-core</module>
-    <module>eno-ws</module>
-  </modules>
+    <properties>
+        <eno.version>2.23.1</eno.version>
+        <java.version>17</java.version>
+        <project.encoding>UTF-8</project.encoding>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.6</version>
+    </parent>
+
+    <modules>
+        <module>eno-core</module>
+        <module>eno-ws</module>
+    </modules>
+
 </project>
