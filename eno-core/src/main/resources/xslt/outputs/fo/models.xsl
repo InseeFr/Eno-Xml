@@ -704,7 +704,7 @@
 				<xsl:with-param name="formula" select="enofo:get-cell-response-filter($source-context,$languages)"/>
 				<xsl:with-param name="variables" as="node()">
 					<Variables>
-						<xsl:for-each select="tokenize(enofo:get-cell-response-filter-conditioning-variables($source-context),' ')">
+						<xsl:for-each select="enofo:get-cell-response-filter-conditioning-variables($source-context)">
 							<xsl:sort select="string-length(.)" order="descending"/>
 							<Variable><xsl:value-of select="."/></Variable>
 						</xsl:for-each>
@@ -718,7 +718,7 @@
 				<xsl:with-param name="formula" select="enofo:get-cell-response-readonly($source-context,$languages)"/>
 				<xsl:with-param name="variables" as="node()">
 					<Variables>
-						<xsl:for-each select="tokenize(enofo:get-cell-response-readonly-conditioning-variables($source-context),' ')">
+						<xsl:for-each select="enofo:get-cell-response-readonly-conditioning-variables($source-context)">
 							<xsl:sort select="string-length(.)" order="descending"/>
 							<Variable><xsl:value-of select="."/></Variable>
 						</xsl:for-each>
