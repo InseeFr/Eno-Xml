@@ -458,7 +458,7 @@
         <xsl:if test="not(normalize-space($unit) = ('',' '))">
             <r:MeasurementUnit>
                 <xsl:if test="enoddi33:is-dynamic-unit($source-context)">
-                    <xsl:attribute name="controlledVocabularyName">personalizedUnit</xsl:attribute>    
+                    <xsl:attribute name="controlledVocabularyName">personalizedUnit</xsl:attribute>
                 </xsl:if>
                 <xsl:value-of select="$unit"/>
             </r:MeasurementUnit>
@@ -788,7 +788,7 @@
             </d:Instruction>
         </xsl:for-each>
     </xsl:template>
-    
+
     <!--this part is disigned in this complicated way to maintain the order of the ddi 3.3 xsd schema-->
     <xsl:template match="driver-InterviewerInstructionReference//*" mode="model" priority="2"/>
 
@@ -804,11 +804,13 @@
     </xsl:template>
 
     <xsl:template match="driver-CellLabel//*" mode="model" priority="3"/>
-    
+
     <xsl:template match="driver-CellLabel//ResponseDomain" mode="model" priority="4">
         <xsl:param name="source-context" as="item()" tunnel="yes"/>
         <xsl:param name="agency" as="xs:string" tunnel="yes"/>
         <xsl:variable name="cell-label" select="enoddi33:get-cell-label($source-context)"/>
+        <xsl:variable name="cell-response-filter" select="enoddi33:get-cell-response-filter($source-context)"/>
+        <xsl:variable name="cell-response-readonly" select="enoddi33:get-cell-response-readonly($source-context)"/>
         <xsl:if test="$cell-label != ''">
             <d:CellLabel>
                 <r:Content xml:lang="{enoddi33:get-lang($source-context)}">
@@ -822,7 +824,37 @@
                         </xsl:for-each>
                     </d:CellCoordinatesAsDefined>
                 </d:GridAttachment>
-            </d:CellLabel>            
+            </d:CellLabel>
+        </xsl:if>
+        <xsl:if test="$cell-response-filter != ''">
+            <d:CellLabel>
+                <r:Content xml:lang="{enoddi33:get-lang($source-context)}">
+                    <xsl:value-of select="$cell-response-filter"/>
+                </r:Content>
+                <r:TypeOfLabel>filteredcell</r:TypeOfLabel>
+                <d:GridAttachment>
+                    <d:CellCoordinatesAsDefined>
+                        <xsl:for-each select="enoddi33:get-cell-coordinates($source-context)">
+                            <d:SelectDimension rank="{position()}" rangeMinimum="{.}" rangeMaximum="{.}"/>
+                        </xsl:for-each>
+                    </d:CellCoordinatesAsDefined>
+                </d:GridAttachment>
+            </d:CellLabel>
+        </xsl:if>
+        <xsl:if test="$cell-response-readonly != ''">
+            <d:CellLabel>
+                <r:Content xml:lang="{enoddi33:get-lang($source-context)}">
+                    <xsl:value-of select="$cell-response-readonly"/>
+                </r:Content>
+                <r:TypeOfLabel>readonlyresponsecell</r:TypeOfLabel>
+                <d:GridAttachment>
+                    <d:CellCoordinatesAsDefined>
+                        <xsl:for-each select="enoddi33:get-cell-coordinates($source-context)">
+                            <d:SelectDimension rank="{position()}" rangeMinimum="{.}" rangeMaximum="{.}"/>
+                        </xsl:for-each>
+                    </d:CellCoordinatesAsDefined>
+                </d:GridAttachment>
+            </d:CellLabel>
         </xsl:if>
     </xsl:template>
 
@@ -926,7 +958,7 @@
                         <xsl:for-each select="$suggester-parameters">
                             <xsl:call-template name="copy-with-lunatic-namespace">
                                 <xsl:with-param name="content-with-previous-namespace" select="."/>
-                            </xsl:call-template>                            
+                            </xsl:call-template>
                         </xsl:for-each>
                         <xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
                     </r:AttributeValue>
@@ -1021,7 +1053,7 @@
                 <xsl:apply-templates select="eno:child-fields($source-context)" mode="source">
                     <xsl:with-param name="driver" select="." tunnel="yes"/>
                 </xsl:apply-templates>
-            </l:CategoryScheme>            
+            </l:CategoryScheme>
         </xsl:if>
     </xsl:template>
 
@@ -1217,7 +1249,6 @@
             </d:ComputationItem>
         </xsl:if>
     </xsl:template>
-    
 
     <xsl:template name="StatementItem" match="driver-StatementItem//Instruction[not(ancestor::driver-InterviewerInstructionReference)]" mode="model">
         <xsl:param name="source-context" as="item()" tunnel="yes"/>
@@ -2492,7 +2523,7 @@
                             <xsl:with-param name="content-with-previous-namespace" select="."/>
                         </xsl:call-template>
                     </xsl:for-each>
-                </xsl:element>                
+                </xsl:element>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:element name="{local-name($content-with-previous-namespace)}" namespace="http://xml.insee.fr/schema/applis/lunatic-h">
