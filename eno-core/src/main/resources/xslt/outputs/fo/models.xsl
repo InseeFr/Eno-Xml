@@ -1682,15 +1682,59 @@
 												</xsl:call-template>
 											</xsl:matching-substring>
 											<xsl:non-matching-substring>
-												<xsl:call-template name="replaceVariablesInFormula">
-													<xsl:with-param name="formula" select="replace($formula,$variable-initial-name,concat('\',$variable-business-name))"/>
-													<xsl:with-param name="variables">
-														<Variables>
-															<xsl:copy-of select="$variables/Variable[position() != 1 ]"/>
-														</Variables>
-													</xsl:with-param>
-													<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
-												</xsl:call-template>
+												<!-- blablanvl(¤var_id¤,nombre_par_defaut) = nombreblibli
+													becomes: if nombre_par_defaut = nombre
+														then : blabla (${var_name} eq nombre or !${var_name}) blibli
+														else : blabla (${var_name} eq nombre) blibli -->
+												<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *(\d+([\.|,]\d+)? *) *\) *= *(\d+([.,]\d+)?)(.*)$">
+													<xsl:matching-substring>
+														<xsl:variable name="formula">
+															<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' eq ',$apos,regex-group(4),$apos)"/>
+															<xsl:if test="regex-group(2) = regex-group(4)">
+																<xsl:value-of select="concat(' or !',$variable-business-name)"/>
+															</xsl:if>
+															<xsl:value-of select="concat(') ',regex-group(6))"/>
+														</xsl:variable>
+														<xsl:call-template name="replaceVariablesInFormula">
+															<xsl:with-param name="formula" select="$formula"/>
+															<xsl:with-param name="variables" select="$variables"/>
+															<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+														</xsl:call-template>
+													</xsl:matching-substring>
+													<xsl:non-matching-substring>
+														<!-- blablanvl(¤var_id¤,nombre_par_defaut) <> nombreblibli
+															becomes: if nombre_par_defaut <> nombre
+																then : blabla (${var_name} ne nombre) blibli
+																else : blabla (${var_name} ne nombre or !${var_name}) blibli -->
+														<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *(\d+([\.|,]\d+)? *) *\) *&lt;&gt; *(\d+([.,]\d+)?)(.*)$">
+															<xsl:matching-substring>
+																<xsl:variable name="formula">
+																	<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' ne ',$apos,regex-group(4),$apos)"/>
+																	<xsl:if test="regex-group(2) != regex-group(4)">
+																		<xsl:value-of select="concat(' or !',$variable-business-name)"/>
+																	</xsl:if>
+																	<xsl:value-of select="concat(') ',regex-group(6))"/>
+																</xsl:variable>
+																<xsl:call-template name="replaceVariablesInFormula">
+																	<xsl:with-param name="formula" select="$formula"/>
+																	<xsl:with-param name="variables" select="$variables"/>
+																	<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																</xsl:call-template>
+															</xsl:matching-substring>
+															<xsl:non-matching-substring>
+																<xsl:call-template name="replaceVariablesInFormula">
+																	<xsl:with-param name="formula" select="replace($formula,$variable-initial-name,concat('\',$variable-business-name))"/>
+																	<xsl:with-param name="variables">
+																		<Variables>
+																			<xsl:copy-of select="$variables/Variable[position() != 1 ]"/>
+																		</Variables>
+																	</xsl:with-param>
+																	<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																</xsl:call-template>
+															</xsl:non-matching-substring>
+														</xsl:analyze-string>
+													</xsl:non-matching-substring>
+												</xsl:analyze-string>
 											</xsl:non-matching-substring>
 										</xsl:analyze-string>
 									</xsl:non-matching-substring>
