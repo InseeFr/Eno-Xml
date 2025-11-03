@@ -1556,6 +1556,30 @@
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi33:get-cell-response-filter</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>enopogues:get-cell-response-filter</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>Returns the filter of a response in a cell</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi33:get-cell-response-readonly</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>enopogues:get-cell-response-readonly</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+      <text:p>Returns the condition readonly of a response in a cell</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
       <text:p>enoddi33:get-cell-label</text:p>
      </table:table-cell>
      <table:table-cell/>
