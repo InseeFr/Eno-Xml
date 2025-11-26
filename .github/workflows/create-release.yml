@@ -141,7 +141,7 @@ jobs:
           makeLatest: "true"
 
       - name: Commit changelog file
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: "main"
           commit_message: "docs(changelog): ${{ needs.check-version.outputs.release-version }} update [skip ci]"
