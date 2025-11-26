@@ -143,7 +143,7 @@ public class ValidatorImpl implements Validator {
 	
 	@Override
 	public ValidationMessage validateMode(OutFormat outFormat, Mode mode) {
-		boolean isValid = mode==null && outFormat !=OutFormat.LUNATIC_XML;
+		boolean isValid = mode==null;
 		String message = "";
 		if(mode!=null) {
 			switch (outFormat) {
@@ -158,10 +158,6 @@ public class ValidatorImpl implements Validator {
 				break;
 			case XFORMS:
 				isValid = mode.equals(Mode.CAWI);
-				break;
-			case LUNATIC_XML:
-				message += "Lunatic output is not supported. ";
-				isValid = false;
 				break;
 			default:
 				isValid=false;

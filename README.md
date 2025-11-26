@@ -15,9 +15,8 @@ It is based on two modules:
 
 Eno can create questionnaires in different formats from the same DDI description.
 
-Eno generates:
+Eno Xml generates:
 
-- [Lunatic](https://github.com/InseeFr/Lunatic) questionnaires.
 - XForms web questionnaires that can be executed on [Orbeon Forms Runner](http://www.orbeon.com/).
 - XSL-FO questionnaires that can be converted to PDF files.
 

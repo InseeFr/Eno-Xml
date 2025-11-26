@@ -56,7 +56,6 @@ public class ParametersController {
 		InputStream fileParam = switch (outFormat) {
             case XFORMS -> parameterService.getDefaultCustomParametersFile(context, OutFormat.XFORMS, mode);
             case FO -> parameterService.getDefaultCustomParametersFile(context, OutFormat.FO, mode);
-            case LUNATIC_XML -> parameterService.getDefaultCustomParametersFile(context, OutFormat.LUNATIC_XML, mode);
             case DDI -> parameterService.getDefaultCustomParametersFile(Context.DEFAULT, OutFormat.DDI, mode);
             case FODT -> parameterService.getDefaultCustomParametersFile(context, OutFormat.FODT, mode);
         };
