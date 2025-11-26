@@ -1,5 +1,13 @@
 # Eno Releases note
 
+## [2.24.1] - 2025-11-26
+### :bug: Bug Fixes
+- [`aff6d8f`](https://github.com/InseeFr/Eno-Xml/commit/aff6d8f56c42bb57173920f3b0a642cc5117e1cb) - **deps**: update all minor dependencies *(PR [#267](https://github.com/InseeFr/Eno-Xml/pull/267) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+### :recycle: Refactors
+- [`e4f0bf4`](https://github.com/InseeFr/Eno-Xml/commit/e4f0bf4d5ed1514dec40e3a32331112fc2963efc) - **pogues2ddi**: new loop min max properties *(PR [#263](https://github.com/InseeFr/Eno-Xml/pull/263) by [@nsenave](https://github.com/nsenave))*
+
+
 ## [2.24.0] - 2025-11-05
 ### :sparkles: New Features
 - [`86f7dce`](https://github.com/InseeFr/Eno-Xml/commit/86f7dce05a9dcedc5c4ab5b4095c6c67b476213f) - filter response cell *(PR [#265](https://github.com/InseeFr/Eno-Xml/pull/265) by [@BulotF](https://github.com/BulotF))*
@@ -493,3 +501,4 @@
 [v2.20.1]: https://github.com/InseeFr/Eno/compare/v2.20.0...v2.20.1
 [2.22.0]: https://github.com/InseeFr/Eno-WS/compare/2.21.0...2.22.0
 [2.24.0]: https://github.com/InseeFr/Eno-Xml/compare/2.23.1...2.24.0
+[2.24.1]: https://github.com/InseeFr/Eno-Xml/compare/2.24.0...2.24.1
