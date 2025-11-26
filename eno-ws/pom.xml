@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>fr.insee.eno</groupId>
-    <artifactId>eno</artifactId>
+	<groupId>fr.insee.eno</groupId>
+	<artifactId>eno</artifactId>
 		<version>${eno.version}</version>
   </parent>
   <artifactId>eno-ws</artifactId>
@@ -20,7 +20,6 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 
-		<lunatic-model.version>2.7.3</lunatic-model.version>
 		<javax.activation.version>1.2.0</javax.activation.version>
 		<jaxb-api.version>2.3.1</jaxb-api.version>
 		<jaxb-impl.version>2.3.9</jaxb-impl.version>
@@ -36,19 +35,6 @@
 		<sonar.language>java</sonar.language>
 		<argLine>-Xms256m -Xmx512m -XX:MaxMetaspaceSize=128m -ea -Dfile.encoding=UTF-8</argLine>
 	</properties>
-<repositories>
-		<!-- Maven central snapshot repository (especially for Lunatic-Model snapshots) -->
-		<repository>
-			<id>oss.sonatype.org-snapshot</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<!-- Spring main dependencies -->
@@ -77,13 +63,6 @@
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-
-		<!-- Lunatic-Model -->
-		<dependency>
-			<groupId>fr.insee.lunatic</groupId>
-			<artifactId>lunatic-model</artifactId>
-			<version>${lunatic-model.version}</version>
 		</dependency>
 
 		<!-- XML -->

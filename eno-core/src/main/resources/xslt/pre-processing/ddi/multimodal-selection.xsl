@@ -80,15 +80,12 @@
       <xd:p>Rules are as follow :</xd:p>
       <xd:p> - all mode (ddi and fodt output) to keep everything</xd:p>
       <xd:p> - papi mode (Fo output) only keeps SelfAdministeredQuestionnaire.Paper</xd:p>
-      <xd:p> - cawi mode (Xforms output and some Lunatic output) only keeps SelfAdministeredQuestionnaire.WebBased</xd:p>
-      <xd:p> - cati mode (some Lunatic output) keeps Interview.Telephone.CATI</xd:p>
-      <xd:p> - capi mode (some Lunatic output) keeps Interview.FaceToFace.CAPIorCAMI</xd:p>
-      <xd:p> - process mode (some Lunatic output) keeps everything (so for now, same as all)</xd:p>
+      <xd:p> - cawi mode (Xforms output) only keeps SelfAdministeredQuestionnaire.WebBased</xd:p>
+      <xd:p> - cati mode keeps Interview.Telephone.CATI</xd:p>
+      <xd:p> - capi mode keeps Interview.FaceToFace.CAPIorCAMI</xd:p>
+      <xd:p> - process mode keeps everything (so for now, same as all)</xd:p>
       <xd:p>Since Fo and Xforms keep only one type of Instruction, the InstructionName items
         describing the collcetion mode can be deleted</xd:p>
-      <xd:p>Since Lunatic keeps everything but SelfAdministeredQuestionnaire.Paper, InstructionName
-        items need to be kept to decide later what to valorize depending on the collection
-        mode</xd:p>
       <xd:p>To allow compatibility with older ddi, an Instruction with no match with an
         InstructionName describing a collection mode shall be kept</xd:p>
     </xd:desc>
@@ -136,15 +133,12 @@
       <xd:p>Rules are as follow :</xd:p>
       <xd:p> - all mode (ddi and fodt output) to keep everything</xd:p>
       <xd:p> - papi mode (Fo output) only keeps SelfAdministeredQuestionnaire.Paper</xd:p>
-      <xd:p> - cawi mode (Xforms output and some Lunatic output) only keeps SelfAdministeredQuestionnaire.WebBased</xd:p>
-      <xd:p> - cati mode (some Lunatic output) keeps Interview.Telephone.CATI</xd:p>
-      <xd:p> - capi mode (some Lunatic output) keeps Interview.FaceToFace.CAPIorCAMI</xd:p>
-      <xd:p> - process mode (some Lunatic output) keeps everything (so for now, same as all)</xd:p>
+      <xd:p> - cawi mode (Xforms output) only keeps SelfAdministeredQuestionnaire.WebBased</xd:p>
+      <xd:p> - cati mode keeps Interview.Telephone.CATI</xd:p>
+      <xd:p> - capi mode keeps Interview.FaceToFace.CAPIorCAMI</xd:p>
+      <xd:p> - process mode keeps everything (so for now, same as all)</xd:p>
       <xd:p>Since Fo and Xforms keep only one type of Instruction, the InstructionName items
         describing the collcetion mode can be deleted</xd:p>
-      <xd:p>Since Lunatic keeps everything but SelfAdministeredQuestionnaire.Paper, InstructionName
-        items need to be kept to decide later what to valorize depending on the collection
-        mode</xd:p>
       <xd:p>To allow compatibility with older ddi, an Instruction with no match with an
         InstructionName describing a collection mode shall be kept</xd:p>
     </xd:desc>

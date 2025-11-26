@@ -24,9 +24,6 @@ public class OpenApiConfiguration {
 	@Value("${fr.insee.enows.enocore.version}")
 	private String enoVersion;
 	
-	@Value("${fr.insee.enows.lunatic.model.version}")
-	private String lunaticModelVersion;
-	
 	@Value("${fr.insee.enows.version}")
 	private String projectVersion;
 
@@ -41,8 +38,7 @@ public class OpenApiConfiguration {
 					.description(String.format("""
                                         <h2>Generator using :</h2>
                                         <div><b>Eno version : </b><i>%s</i></div>
-                                        <div><b>Lunatic-Model version : </b><i>%s</i></div>
-                                        """,enoVersion,lunaticModelVersion))
+                                        """,enoVersion))
 					.version(buildProperties.getVersion())
 	); }
 
