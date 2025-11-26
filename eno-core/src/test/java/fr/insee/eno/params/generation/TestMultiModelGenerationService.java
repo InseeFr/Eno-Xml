@@ -12,15 +12,12 @@ import java.io.FileOutputStream;
 
 import static fr.insee.eno.Constants.createTempEnoFile;
 
-public class TestMultiModelGenerationService {
-	
+class TestMultiModelGenerationService {
 
-	private MultiModelService multiModelService = new MultiModelService();
-	
-	
-	
+	private final MultiModelService multiModelService = new MultiModelService();
+
 	@Test
-	public void defaultTest() {
+	void defaultTest() {
 		String basePathDDI = "src/test/resources/params/in-to-out/multimodel";
 		File input = new File(String.format("%s/ddi.xml", basePathDDI));
 		File params = new File(String.format("%s/params-xforms.xml", basePathDDI));
@@ -36,7 +33,6 @@ public class TestMultiModelGenerationService {
 			output.close();
 			System.out.println("File generated to :"+outputFile.getAbsolutePath());
 		});
-
 	}
-	
+
 }

@@ -14,17 +14,15 @@ import java.io.*;
 
 import static fr.insee.eno.Constants.createTempEnoFile;
 
-public class TestDDI2XFORMS {
+class TestDDI2XFORMS {
 	
-	private DDI2XFORMSGenerator ddi2xforms = new DDI2XFORMSGenerator();
-	
-	private XMLDiff xmlDiff = new XMLDiff();
+	private final DDI2XFORMSGenerator ddi2xforms = new DDI2XFORMSGenerator();
 
 	@Test
-	public void simpleDiffTest() {
+	void simpleDiffTest() {
 		try {
 			String basePath = "src/test/resources/ddi-to-xforms";
-			
+
 			Preprocessor[] preprocessors = {
 
 					new DDIMultimodalSelectionPreprocessor(),
@@ -32,9 +30,9 @@ public class TestDDI2XFORMS {
 					new DDIDereferencingPreprocessor(),
 					new DDICleaningPreprocessor(),
 					new DDITitlingPreprocessor()};
-			
+
 			Postprocessor[] postprocessors = {new XFORMSBrowsingPostprocessor()};
-			
+
 			GenerationService genService = new GenerationService(preprocessors, ddi2xforms, postprocessors);
 			File in = new File(String.format("%s/in.xml", basePath));
 			ByteArrayInputStream inputStream = new ByteArrayInputStream(FileUtils.readFileToByteArray(in));
@@ -45,7 +43,7 @@ public class TestDDI2XFORMS {
 			}
 			output.close();
 			File expectedFile = new File(String.format("%s/out.xhtml", basePath));
-			Diff diff = xmlDiff.getDiff(outputFile, expectedFile);
+			Diff diff = new XMLDiff().getDiff(outputFile, expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, ()->getDiffMessage(diff, basePath));
 
 		} catch (IOException e) {
@@ -62,7 +60,8 @@ public class TestDDI2XFORMS {
 	}
 
 	private String getDiffMessage(Diff diff, String path) {
-		return String.format("Transformed output for %s should match expected XML document:\n %s", path,
+		return String.format("Transformed output for %s should match expected XML document:%n%s", path,
 				diff.toString());
 	}
+
 }

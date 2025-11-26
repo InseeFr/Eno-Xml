@@ -3,16 +3,22 @@ package fr.insee.eno.main;
 import org.apache.fop.apps.Fop;
 import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.MimeConstants;
-import org.xml.sax.SAXException;
 
-import javax.xml.transform.*;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 
+/** Manual test class. */
 public class DummyTestFO2PDF {
 
-	public void main(String[] args) {
+	public static void main(String[] args) {
 
 		String basePathFO2PDF = "src/test/resources/fo-to-pdf";
 		File in = new File(String.format("%s/in.fo", basePathFO2PDF));
@@ -56,16 +62,7 @@ public class DummyTestFO2PDF {
 			
 			System.out.println(outFile.getAbsolutePath());
 			
-		} catch (
-
-		TransformerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

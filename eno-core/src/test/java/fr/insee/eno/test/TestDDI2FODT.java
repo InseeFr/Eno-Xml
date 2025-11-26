@@ -22,17 +22,14 @@ import static fr.insee.eno.Constants.createTempEnoFile;
 class TestDDI2FODT {
 
 	final Logger logger = LoggerFactory.getLogger(TestDDI2FODT.class);
-	
-	private DDI2FODTGenerator ddi2fodt = new DDI2FODTGenerator();
-	
-	private XMLDiff xmlDiff = new XMLDiff();
 
-	
+	private final DDI2FODTGenerator ddi2fodt = new DDI2FODTGenerator();
+
 	@Test
 	void simpleDiffTest() {
 		try {
 			String basePath = "src/test/resources/ddi-to-fodt";
-			
+
 			Preprocessor[] preprocessors = {
 
 					new DDIMultimodalSelectionPreprocessor(),
@@ -40,9 +37,9 @@ class TestDDI2FODT {
 					new DDIDereferencingPreprocessor(),
 					new DDICleaningPreprocessor(),
 					new DDITitlingPreprocessor()};
-			
+
 			Postprocessor[] postprocessors = {new NoopPostprocessor()};
-			
+
 			GenerationService genService = new GenerationService(preprocessors, ddi2fodt, postprocessors);
 			File in = new File(String.format("%s/in.xml", basePath));
 			ByteArrayInputStream inputStream = new ByteArrayInputStream(FileUtils.readFileToByteArray(in));
@@ -53,9 +50,9 @@ class TestDDI2FODT {
 			}
 			output.close();
 			File expectedFile = new File(String.format("%s/out.fodt", basePath));
-			Diff diff = xmlDiff.getDiff(outputFile,expectedFile);
+			Diff diff = new XMLDiff().getDiff(outputFile,expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, ()->getDiffMessage(diff, basePath));
-			
+
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			Assertions.fail();
@@ -63,7 +60,8 @@ class TestDDI2FODT {
 	}
 
 	private String getDiffMessage(Diff diff, String path) {
-		return String.format("Transformed output for %s should match expected XML document:\n %s", path,
+		return String.format("Transformed output for %s should match expected XML document:%n%s", path,
 				diff.toString());
 	}
+
 }

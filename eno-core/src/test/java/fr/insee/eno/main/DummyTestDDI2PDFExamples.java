@@ -21,17 +21,16 @@ import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 import java.net.URI;
 
-public class DummyTestDDI2PDFExamples {
+class DummyTestDDI2PDFExamples {
 
-	private DDI2FOGenerator generator =  new DDI2FOGenerator();
-	
+	private final DDI2FOGenerator generator = new DDI2FOGenerator();
+
 	@Test
-	public void mainTest() {
+	void mainTest() {
 
 		String basePathExamples = "src/test/resources/examples";
 		String basePathImg = "src/test/resources/examples/img/";
 
-		
 		File in = new File(String.format("%s/esa-ddi-v2.xml", basePathExamples));
 		File xconf = new File(String.format("%s/fop.xconf", basePathExamples));
 		// File paramFile = new File(String.format("%s/ddi2pdf.xml", basePathExamples));
