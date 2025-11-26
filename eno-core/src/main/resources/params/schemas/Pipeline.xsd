@@ -32,7 +32,6 @@
             <xs:enumeration value="xforms"/>
             <xs:enumeration value="fo"/>
             <xs:enumeration value="fodt"/>
-            <xs:enumeration value="lunatic-xml"/>
         </xs:restriction>
     </xs:simpleType>
     
