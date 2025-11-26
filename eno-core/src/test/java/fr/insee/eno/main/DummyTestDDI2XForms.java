@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
-public class DummyTestDDI2XForms {
-	
-	private DDI2XFORMSGenerator ddi2xformsGenerator = new DDI2XFORMSGenerator();
-	
+class DummyTestDDI2XForms {
+
+	private final DDI2XFORMSGenerator ddi2xformsGenerator = new DDI2XFORMSGenerator();
+
 	@Test
-	public void mainTest() throws IOException {
+	void mainTest() throws IOException {
 
 		String basePathDDI2XFORMS = "src/test/resources/ddi-to-xforms";
 		

@@ -7,15 +7,18 @@ import fr.insee.eno.preprocessing.*;
 import fr.insee.eno.service.GenerationService;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 
-public class DummyTestDDI2FO {
-	
-	private DDI2FOGenerator ddi2fo = new DDI2FOGenerator();
-	
+class DummyTestDDI2FO {
+
+	private static final Logger log = LoggerFactory.getLogger(DummyTestDDI2FO.class);
+	private final DDI2FOGenerator ddi2fo = new DDI2FOGenerator();
+
 	@Test
-	public void mainTest() throws IOException {
+	void mainTest() throws IOException {
 		String basePathDDI2FO = "src/test/resources/ddi-to-fo";
 		
 		Preprocessor[] preprocessors = {
@@ -47,13 +50,9 @@ public class DummyTestDDI2FO {
 			output.close();
 			System.out.println(file.getAbsolutePath());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.warn("Exception occurred in test:");
+			log.warn(e.getMessage());
 		}
-		
-
-		
 	}
 
 }
-
