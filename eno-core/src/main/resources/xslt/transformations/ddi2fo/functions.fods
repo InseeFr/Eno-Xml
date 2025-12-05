@@ -1317,7 +1317,19 @@
       <text:p>Linking output function enofo:is-external-filter to input function enoddi:is-external-filter</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048528">
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enofo:get-suggester-label-name</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:get-suggester-label-name</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Linking output function enofo:get-suggester-label-name to input function enoddi:get-suggester-label-name</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048524">
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">

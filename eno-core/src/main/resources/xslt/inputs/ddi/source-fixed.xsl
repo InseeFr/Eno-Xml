@@ -1649,5 +1649,15 @@
         </xsl:choose>
     </xsl:template>
 
+    <xd:doc>
+        <xd:desc>
+            <xd:p>The variable containing the label of a suggester is a calculated variable with formula left_join(suggester_variable, NOMENCLATURE using id, label)</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="d:CodeDomain[r:GenericOutputFormat ='suggester']" mode="enoddi:get-suggester-label-name">
+        <xsl:variable name="suggester-id" select="enoddi:get-id(.)"/>
+        <xsl:value-of select="enoddi:get-business-name(//d:GenerationInstruction[descendant::r:SourceParameterReference/r:ID = $suggester-id
+                    and starts-with(descendant::r:CommandContent,'left_join(') and ends-with(descendant::r:CommandContent,' using id, label)')])"/>
+    </xsl:template>
 
 </xsl:stylesheet>
