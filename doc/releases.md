@@ -1,5 +1,17 @@
 # Eno Releases note
 
+## [2.24.2] - 2025-12-15
+### :bug: Bug Fixes
+- [`84bc245`](https://github.com/InseeFr/Eno-Xml/commit/84bc245555e26d818102ee78cfe5222f96421a1d) - **deps**: update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.8 *(PR [#269](https://github.com/InseeFr/Eno-Xml/pull/269) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+### :recycle: Refactors
+- [`84b8328`](https://github.com/InseeFr/Eno-Xml/commit/84b83285f1f8af40259411f820c8a1cf1760a906) - remove lunatic-model dependency *(PR [#270](https://github.com/InseeFr/Eno-Xml/pull/270) by [@nsenave](https://github.com/nsenave))*
+- [`9bf2164`](https://github.com/InseeFr/Eno-Xml/commit/9bf21646a8724585f204747a49898999cd285afc) - remove junit 4 *(PR [#276](https://github.com/InseeFr/Eno-Xml/pull/276) by [@nsenave](https://github.com/nsenave))*
+
+### :construction_worker: Build System
+- [`b7bfc7e`](https://github.com/InseeFr/Eno-Xml/commit/b7bfc7e931e140d93f7410a088fe2143d0e4ef7d) - fix snapshot ci trigger *(commit by [@nsenave](https://github.com/nsenave))*
+
+
 ## [2.24.1] - 2025-11-26
 ### :bug: Bug Fixes
 - [`aff6d8f`](https://github.com/InseeFr/Eno-Xml/commit/aff6d8f56c42bb57173920f3b0a642cc5117e1cb) - **deps**: update all minor dependencies *(PR [#267](https://github.com/InseeFr/Eno-Xml/pull/267) by [@renovate[bot]](https://github.com/apps/renovate))*
@@ -502,3 +514,4 @@
 [2.22.0]: https://github.com/InseeFr/Eno-WS/compare/2.21.0...2.22.0
 [2.24.0]: https://github.com/InseeFr/Eno-Xml/compare/2.23.1...2.24.0
 [2.24.1]: https://github.com/InseeFr/Eno-Xml/compare/2.24.0...2.24.1
+[2.24.2]: https://github.com/InseeFr/Eno-Xml/compare/2.24.1...2.24.2
