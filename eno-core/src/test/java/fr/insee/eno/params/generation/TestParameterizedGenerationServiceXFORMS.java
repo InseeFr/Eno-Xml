@@ -14,14 +14,12 @@ import java.io.FileOutputStream;
 
 import static fr.insee.eno.Constants.createTempEnoFile;
 
-public class TestParameterizedGenerationServiceXFORMS {
+class TestParameterizedGenerationServiceXFORMS {
 
-	private ParameterizedGenerationService parameterizedGenerationService = new ParameterizedGenerationService();
-
-	private XMLDiff xmlDiff = new XMLDiff();
+	private final ParameterizedGenerationService parameterizedGenerationService = new ParameterizedGenerationService();
 
 	@Test
-	public void defaultTest() {
+	void defaultTest() {
 		String basePathDDI = "src/test/resources/params/in-to-out/default";
 		File input = new File(String.format("%s/ddi.xml", basePathDDI));
 		File params = new File(String.format("%s/params-xforms.xml", basePathDDI));
@@ -39,19 +37,17 @@ public class TestParameterizedGenerationServiceXFORMS {
 			}
 			output.close();
 			File expectedFile = new File(String.format("%s/form.xhtml", basePathDDI));
-			Diff diff = xmlDiff.getDiff(outputFile, expectedFile);
+			Diff diff = new XMLDiff().getDiff(outputFile, expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, () -> getDiffMessage(diff, basePathDDI));
 			FileUtils.delete(outputFile);
 		} catch (Exception e) {
 			Assertions.fail();
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	@Test
-	public void householdTest() throws Exception {
+	void householdTest() throws Exception {
 		String basePathDDI = "src/test/resources/params/in-to-out/household";
 		File input = new File(String.format("%s/ddi.xml", basePathDDI));
 		File params = new File(String.format("%s/params-xforms.xml", basePathDDI));
@@ -69,14 +65,13 @@ public class TestParameterizedGenerationServiceXFORMS {
 		}
 		output.close();
 		File expectedFile = new File(String.format("%s/form.xhtml", basePathDDI));
-		Diff diff = xmlDiff.getDiff(outputFile, expectedFile);
+		Diff diff = new XMLDiff().getDiff(outputFile, expectedFile);
 		Assertions.assertFalse(diff::hasDifferences, () -> getDiffMessage(diff, basePathDDI));
 		FileUtils.delete(outputFile);
-
 	}
 
 	@Test
-	public void businessTest() {
+	void businessTest() {
 		String basePathDDI = "src/test/resources/params/in-to-out/business";
 		File input = new File(String.format("%s/ddi.xml", basePathDDI));
 		File params = new File(String.format("%s/params-xforms.xml", basePathDDI));
@@ -96,7 +91,7 @@ public class TestParameterizedGenerationServiceXFORMS {
 			}
 			output.close();
 			File expectedFile = new File(String.format("%s/form.xhtml", basePathDDI));
-			Diff diff = xmlDiff.getDiff(outputFile, expectedFile);
+			Diff diff = new XMLDiff().getDiff(outputFile, expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, () -> getDiffMessage(diff, basePathDDI));
 			FileUtils.delete(outputFile);
 		} catch (Exception e) {
@@ -106,7 +101,7 @@ public class TestParameterizedGenerationServiceXFORMS {
 	}
 
 	private String getDiffMessage(Diff diff, String path) {
-		return String.format("Transformed output for %s should match expected XML document:\n %s", path,
+		return String.format("Transformed output for %s should match expected XML document:%n%s", path,
 				diff.toString());
 	}
 
