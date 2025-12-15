@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class TestValidator {
-	
-	private Validator validator = new ValidatorImpl();
-	
+class TestValidator {
+
+	private final Validator validator = new ValidatorImpl();
+
 	@Test
-	public void testValidatePreProcessings() {
+	void testValidatePreProcessings() {
 		
 		List<PreProcessing> preProcessings = Arrays.asList(
 				PreProcessing.DDI_MULTIMODAL_SELECTION,
@@ -24,7 +24,7 @@ public class TestValidator {
 				PreProcessing.DDI_TITLING,
 				PreProcessing.POGUES_XML_GOTO_2_ITE);
 		
-		Pipeline pipeline = new Pipeline();		
+		Pipeline pipeline = new Pipeline();
 		pipeline.setInFormat(InFormat.DDI);
 		pipeline.getPreProcessing().addAll(preProcessings);
 		
@@ -34,11 +34,9 @@ public class TestValidator {
 		Assertions.assertFalse(valid.isValid());
 		
 	}
-	
 
-	
 	@Test
-	public void testValidatePostProcessings() {
+	void testValidatePostProcessings() {
 		
 		List<PreProcessing> preProcessings = Arrays.asList(
 				PreProcessing.DDI_DEREFERENCING);
@@ -73,9 +71,9 @@ public class TestValidator {
 		//System.out.println(valid2.getMessage());
 		//Assertions.assertFalse(valid2.isValid());
 	}
-	
+
 	@Test
-	public void testValidateIn2Out() {
+	void testValidateIn2Out() {
 		ValidationMessage valid0 = validator.validateIn2Out(InFormat.DDI, OutFormat.XFORMS);
 		ValidationMessage valid1 = validator.validateIn2Out(InFormat.POGUES_XML, OutFormat.XFORMS);
 		ValidationMessage valid2 = validator.validateIn2Out(InFormat.DDI, OutFormat.DDI);
@@ -94,10 +92,9 @@ public class TestValidator {
 		Assertions.assertTrue(valid3.isValid());
 		//Assertions.assertTrue(valid4.isValid());
 	}
-	
+
 	@Test
-	public void validateModeDDI() {
-		
+	void validateModeDDI() {
 		ValidationMessage valida0 = validator.validateMode(OutFormat.DDI,Mode.CAWI);
 		ValidationMessage valida1 = validator.validateMode(OutFormat.DDI,Mode.PAPI);
 		ValidationMessage valida2 = validator.validateMode(OutFormat.DDI,Mode.CAPI);
@@ -105,8 +102,7 @@ public class TestValidator {
 		ValidationMessage valida4 = validator.validateMode(OutFormat.DDI,Mode.ALL);
 		ValidationMessage valida5 = validator.validateMode(OutFormat.DDI,Mode.PROCESS);
 		ValidationMessage valida6 = validator.validateMode(OutFormat.DDI,null);	
-		
-		
+
 		Assertions.assertFalse(valida0.isValid());
 		Assertions.assertFalse(valida1.isValid());
 		Assertions.assertFalse(valida2.isValid());
@@ -116,20 +112,17 @@ public class TestValidator {
 		Assertions.assertTrue(valida6.isValid());
 		
 	}
-	
-	@Test
-	public void validateModeFO() {
 
-		
+	@Test
+	void validateModeFO() {
 		ValidationMessage validb0 = validator.validateMode(OutFormat.FO,Mode.CAWI);
 		ValidationMessage validb1 = validator.validateMode(OutFormat.FO,Mode.PAPI);
 		ValidationMessage validb2 = validator.validateMode(OutFormat.FO,Mode.CAPI);
 		ValidationMessage validb3 = validator.validateMode(OutFormat.FO,Mode.CATI);
 		ValidationMessage validb4 = validator.validateMode(OutFormat.FO,Mode.ALL);
 		ValidationMessage validb5 = validator.validateMode(OutFormat.FO,Mode.PROCESS);
-		ValidationMessage validb6 = validator.validateMode(OutFormat.FO,null);	
-	
-		
+		ValidationMessage validb6 = validator.validateMode(OutFormat.FO,null);
+
 		Assertions.assertFalse(validb0.isValid());
 		Assertions.assertTrue(validb1.isValid());
 		Assertions.assertFalse(validb2.isValid());
@@ -138,9 +131,9 @@ public class TestValidator {
 		Assertions.assertFalse(validb5.isValid());
 		Assertions.assertTrue(validb6.isValid());
 	}
-	
+
 	@Test
-	public void validateModeFODT() {
+	void validateModeFODT() {
 		
 		ValidationMessage validc0 = validator.validateMode(OutFormat.FODT,Mode.CAWI);
 		ValidationMessage validc1 = validator.validateMode(OutFormat.FODT,Mode.PAPI);
@@ -157,20 +150,18 @@ public class TestValidator {
 		Assertions.assertTrue(validc4.isValid());
 		Assertions.assertFalse(validc5.isValid());
 		Assertions.assertTrue(validc6.isValid());
-		
 	}
-	
+
 	@Test
-	public void validateMode() {
-		
+	void validateMode() {
 		ValidationMessage validd0 = validator.validateMode(OutFormat.XFORMS,Mode.CAWI);
 		ValidationMessage validd1 = validator.validateMode(OutFormat.XFORMS,Mode.PAPI);
 		ValidationMessage validd2 = validator.validateMode(OutFormat.XFORMS,Mode.CAPI);
 		ValidationMessage validd3 = validator.validateMode(OutFormat.XFORMS,Mode.CATI);
 		ValidationMessage validd4 = validator.validateMode(OutFormat.XFORMS,Mode.ALL);
 		ValidationMessage validd5 = validator.validateMode(OutFormat.XFORMS,Mode.PROCESS);
-		ValidationMessage validd6 = validator.validateMode(OutFormat.XFORMS,null);	
-		
+		ValidationMessage validd6 = validator.validateMode(OutFormat.XFORMS,null);
+
 		Assertions.assertTrue(validd0.isValid());
 		Assertions.assertFalse(validd1.isValid());
 		Assertions.assertFalse(validd2.isValid());
@@ -179,4 +170,5 @@ public class TestValidator {
 		Assertions.assertFalse(validd5.isValid());
 		Assertions.assertTrue(validd6.isValid());
 	}
+
 }

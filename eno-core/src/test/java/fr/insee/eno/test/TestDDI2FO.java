@@ -15,9 +15,8 @@ import java.io.*;
 import static fr.insee.eno.Constants.createTempEnoFile;
 
 class TestDDI2FO {
-		
-	private final DDI2FOGenerator ddi2fo = new DDI2FOGenerator();
 
+	private final DDI2FOGenerator ddi2fo = new DDI2FOGenerator();
 	private final XMLDiff xmlDiff = new XMLDiff();
 
 	@Test
@@ -82,7 +81,8 @@ class TestDDI2FO {
 	}
 
 	private String getDiffMessage(Diff diff, String path) {
-		return  String.format("Transformed output for %s should match expected XML document:\n %s", path,
+		return  String.format("Transformed output for %s should match expected XML document:%n%s", path,
 				diff.toString());
 	}
+
 }

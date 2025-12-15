@@ -21,12 +21,12 @@ import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 import java.net.URI;
 
-public class DummyTestDDI2PDF {
-	
-	private DDI2FOGenerator ddi2pdfGenerator = new DDI2FOGenerator();	
+class DummyTestDDI2PDF {
+
+	private final DDI2FOGenerator ddi2pdfGenerator = new DDI2FOGenerator();
 
 	@Test
-	public void mainTest() {
+	void mainTest() {
 
 		String basePathddi2PDF = "src/test/resources/ddi-to-fo";
 		String basePathImg = "src/test/resources/examples/img/";
