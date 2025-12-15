@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
-public class DummyTestDDI2FODT {
-	
-	private DDI2FODTGenerator ddi2fodtGenerator = new DDI2FODTGenerator();
+class DummyTestDDI2FODT {
+
+	private final DDI2FODTGenerator ddi2fodtGenerator = new DDI2FODTGenerator();
 
 	@Test
-	public void main() throws IOException {
+	void main() throws IOException {
 			
 		String basePathDDI2ODT = "src/test/resources/ddi-to-fodt";
 		
@@ -44,9 +44,6 @@ public class DummyTestDDI2FODT {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-
-		
 	}
 
 }

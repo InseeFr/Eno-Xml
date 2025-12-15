@@ -24,21 +24,19 @@ import java.util.Arrays;
 
 import static fr.insee.eno.Constants.createTempEnoFile;
 
-public class TestValorizatorParametersImpl {
+class TestValorizatorParametersImpl {
 
 	private ValorizatorParametersImpl valorizatorParametersImpl;
 	private ENOParameters complexeEnoParameters;
 	private ENOParameters simpleEnoParameters;
 
-	private XMLDiff xmlDiff = new XMLDiff();
-
 	@BeforeEach
-	public void setValorizator() {
+	void setValorizator() {
 		valorizatorParametersImpl = new ValorizatorParametersImpl();
 	}
 
 	@BeforeEach
-	public void setComplexeEnoParameters() {
+	void setComplexeEnoParameters() {
 		complexeEnoParameters = new ENOParameters();
 
 		Pipeline pipeline = new Pipeline();
@@ -56,16 +54,15 @@ public class TestValorizatorParametersImpl {
 		languages.getLanguage().add(Language.EN);
 		parameters.setLanguages(languages);
 
-
 		FOParameters foParameters = new FOParameters();
 		Table table = new Table();
 		Row row = new Row();
 		row.setDefaultSize(150);
 		table.setRow(row);
 		Format format = new Format();
-		format.setOrientation(Orientation.LANDSCAPE);		
+		format.setOrientation(Orientation.LANDSCAPE);
 		foParameters.setTable(table);
-		foParameters.setFormat(format);				
+		foParameters.setFormat(format);
 
 		foParameters.setAccompanyingMail(AccompanyingMail.CNR_COL);
 
@@ -77,12 +74,11 @@ public class TestValorizatorParametersImpl {
 
 		parameters.setXformsParameters(xformsParameters);
 
-
 		complexeEnoParameters.setParameters(parameters);
 	}
 
 	@BeforeEach
-	public void setSimpleEnoParameters() {
+	void setSimpleEnoParameters() {
 		simpleEnoParameters = new ENOParameters();
 		Pipeline pipeline = new Pipeline();
 		pipeline.setInFormat(InFormat.DDI);
@@ -99,9 +95,8 @@ public class TestValorizatorParametersImpl {
 	}
 
 	@Test
-	public void testValorizationComplexeJavaParameters() {
-		try {			
-
+	void testValorizationComplexeJavaParameters() {
+		try {
 			long debut = System.currentTimeMillis();
 			ENOParameters enoParametersFinal = valorizatorParametersImpl.mergeEnoParameters(complexeEnoParameters);
 			System.out.println("Merging time : "+(System.currentTimeMillis()-debut)+" ms");
@@ -118,8 +113,7 @@ public class TestValorizatorParametersImpl {
 
 			//AccompanyingMail
 			Assertions.assertEquals(AccompanyingMail.CNR_COL, enoParametersFinal.getParameters().getFoParameters().getAccompanyingMail());
-			
-			
+
 			debut = System.currentTimeMillis();
 			Path outPath = Paths.get(Constants.ENO_TEMP_FOLDER_PATH + "/complexe-parameters-new.xml");
 			Files.deleteIfExists(outPath);
@@ -144,23 +138,20 @@ public class TestValorizatorParametersImpl {
 	}
 
 	@Test
-	public void testValorizationSimpleJavaParameters() {
-		try {			
-
+	void testValorizationSimpleJavaParameters() {
+		try {
 			long debut = System.currentTimeMillis();
 			ENOParameters enoParametersFinal = valorizatorParametersImpl.mergeEnoParameters( 
 					simpleEnoParameters);
 			System.out.println("Merging time : "+(System.currentTimeMillis()-debut)+" ms");
-			ENOParameters enoParametersDefault = valorizatorParametersImpl.getDefaultParameters();			
-
-
+			ENOParameters enoParametersDefault = valorizatorParametersImpl.getDefaultParameters();
 
 			debut = System.currentTimeMillis();
 			Path outPath = Paths.get(Constants.ENO_TEMP_FOLDER_PATH + "/simple-parameters-new.xml");
 			Files.deleteIfExists(outPath);
 
 			JAXBContext context = JAXBContext.newInstance(ENOParameters.class);
-			Marshaller jaxbMarshaller =  context.createMarshaller();			
+			Marshaller jaxbMarshaller =  context.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);	 
 
@@ -179,7 +170,6 @@ public class TestValorizatorParametersImpl {
 			Assertions.assertEquals(
 					Arrays.asList(PostProcessing.XFORMS_BROWSING,PostProcessing.XFORMS_FIX_ADHERENCE),
 					enoParametersFinal.getPipeline().getPostProcessing());
-
 
 			//Other params 
 			Assertions.assertEquals(
@@ -200,9 +190,9 @@ public class TestValorizatorParametersImpl {
 	}
 
 	@Test
-	public void testValorizationXmlParameters() {
+	void testValorizationXmlParameters() {
 		try {
-			String basePath = "src/test/resources/params/valorization";			
+			String basePath = "src/test/resources/params/valorization";
 			File in = new File(String.format("%s/parameters-input.xml", basePath));
 			File outputFile = createTempEnoFile();
 			ByteArrayOutputStream output = valorizatorParametersImpl.mergeParameters(
@@ -211,8 +201,8 @@ public class TestValorizatorParametersImpl {
 				fos.write(output.toByteArray());
 			}
 			output.close();
-			File expectedFile = new File(String.format("%s/parameters-expected.xml", basePath));			
-			Diff diff = xmlDiff.getDiff(outputFile,expectedFile);
+			File expectedFile = new File(String.format("%s/parameters-expected.xml", basePath));
+			Diff diff = new XMLDiff().getDiff(outputFile,expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, ()->getDiffMessage(diff, basePath));
 			FileUtils.delete(outputFile);
 
@@ -224,11 +214,11 @@ public class TestValorizatorParametersImpl {
 			System.out.println(e.getMessage());
 			Assertions.fail();
 		}
-
 	}
 
 	private String getDiffMessage(Diff diff, String path) {
-		return String.format("Transformed output for %s should match expected XML document:\n %s", path,
+		return String.format("Transformed output for %s should match expected XML document:%n%s", path,
 				diff.toString());
 	}
+
 }

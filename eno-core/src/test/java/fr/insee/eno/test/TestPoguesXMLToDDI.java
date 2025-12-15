@@ -16,33 +16,30 @@ import java.io.*;
 
 import static fr.insee.eno.Constants.createTempEnoFile;
 
-public class TestPoguesXMLToDDI {
+class TestPoguesXMLToDDI {
 
-	
-	private PoguesXML2DDIGenerator poguesXML2DDI = new PoguesXML2DDIGenerator();
-
-	private XMLDiff xmlDiff = new XMLDiff();
+	private final PoguesXML2DDIGenerator poguesXML2DDI = new PoguesXML2DDIGenerator();
 
 	@Test
-	public void simpleDiffTest() {
+	void simpleDiffTest() {
 		String basePath = "src/test/resources/pogues-xml-to-ddi";
 		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
 	}
 
 	@Test
-	public void arbitrarySuggesterResponseTest() {
+	void arbitrarySuggesterResponseTest() {
 		String basePath = "src/test/resources/pogues-xml-to-ddi/suggester-arbitrary";
 		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
 	}
 
 	@Test
-	public void arbitrarySuggesterResponseInLoopTest() {
+	void arbitrarySuggesterResponseInLoopTest() {
 		String basePath = "src/test/resources/pogues-xml-to-ddi/suggester-arbitrary";
 		testTransformationInOut(String.format("%s/in-loop.xml", basePath), String.format("%s/out-loop.xml", basePath));
 	}
 
 	@Test
-	public void rowControlsTest() {
+	void rowControlsTest() {
 		String basePath = "src/test/resources/pogues-xml-to-ddi/row-controls";
 		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
 	}
@@ -65,7 +62,7 @@ public class TestPoguesXMLToDDI {
 			}
 			output.close();
 			File expectedFile = new File(outPath);
-			Diff diff = xmlDiff.getDiff(outputFile, expectedFile);
+			Diff diff = new XMLDiff().getDiff(outputFile, expectedFile);
 			Assertions.assertFalse(diff::hasDifferences, ()->getDiffMessage(diff));
 
 		} catch (IOException e) {
@@ -81,7 +78,8 @@ public class TestPoguesXMLToDDI {
 	}
 
 	private String getDiffMessage(Diff diff) {
-		return String.format("Transformed output should match expected XML document:\n %s",
+		return String.format("Transformed output should match expected XML document:%n%s",
 				diff.toString());
 	}
+
 }
