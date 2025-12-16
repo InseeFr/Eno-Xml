@@ -474,6 +474,7 @@
 		<xsl:param name="loop-position" tunnel="yes" select="''"/>
 		<xsl:param name="empty-occurrence" tunnel="yes" as="xs:boolean" select="false()"/>
 
+		<xsl:variable name="table-name" select="concat(enofo:get-question-name($source-context,$languages[1]),$loop-position)"/>
 		<xsl:variable name="loop-name" select="enofo:get-business-name($source-context)"/>
 		<xsl:variable name="current-match" select="."/>
 		<xsl:variable name="no-border" select="enofo:get-style($source-context)"/>
@@ -537,7 +538,7 @@
 			<xsl:text>&#xa;</xsl:text>
 			<xsl:variable name="table-begin" as="node()">
 				<fo:block page-break-inside="avoid">
-					<xsl:attribute name="id" select="concat($loop-name,$loop-position,'-$DynamicArrayPage')"/>
+					<xsl:attribute name="id" select="concat($table-name,$loop-position,'-$DynamicArrayPage')"/>
 					<xsl:attribute name="page-break-after" select="'always'"/>
 					<fo:table inline-progression-dimension="auto" table-layout="fixed" width="100%" font-size="10pt" border-width="0.35mm"
 						text-align="center" margin-top="1mm" display-align="center" space-after="5mm"/>
@@ -566,7 +567,7 @@
 		</xsl:apply-templates>
 
 		<fo:block page-break-inside="avoid">
-			<xsl:attribute name="id" select="concat($loop-name,$loop-position)"/>
+			<xsl:attribute name="id" select="concat($table-name,$loop-position)"/>
 			<xsl:if test="$maximum-lines-number = '' or number($maximum-lines-number) &gt;= $maxlines-by-page">
 				<xsl:attribute name="page-break-after" select="'always'"/>
 			</xsl:if>
@@ -615,10 +616,10 @@
 						<xsl:choose>
 							<xsl:when test="not($is-dynamic-array-static)">
 								<xsl:text>#set( $initializeInt = 0)&#xa;</xsl:text>
-								<xsl:value-of select="concat('#set( $',$loop-name,'-TotalOccurrenceInt = $initializeInt.parseInt(${',$personalised-lines-count-name,'}))')"/>
+								<xsl:value-of select="concat('#set( $',$table-name,'-TotalOccurrenceInt = $initializeInt.parseInt(${',$personalised-lines-count-name,'}))')"/>
 							</xsl:when>
 							<xsl:when test="$context != 'default'">
-								<xsl:value-of select="concat('#set( $',$loop-name,'-TotalOccurrenceInt = 0)')"/>
+								<xsl:value-of select="concat('#set( $',$table-name,'-TotalOccurrenceInt = 0)')"/>
 							</xsl:when>
 						</xsl:choose>
 						<xsl:text>&#xa;</xsl:text>
@@ -626,11 +627,11 @@
 							<xsl:variable name="empty-position" select="position()"/>
 							<xsl:if test="$empty-position &gt; $empty-lines">
 								<xsl:text>&#xa;</xsl:text>
-								<xsl:value-of select="concat('#if ($',$loop-name,'-TotalOccurrenceInt le ',$roster-minimum-lines - $empty-position,') ')"/>
+								<xsl:value-of select="concat('#if ($',$table-name,'-TotalOccurrenceInt le ',$roster-minimum-lines - $empty-position,') ')"/>
 							</xsl:if>
 							<xsl:if test="$context != 'default'">
 								<xsl:text>&#xa;</xsl:text>
-								<xsl:value-of select="replace($table-split-content,'PositionInTheLoop',concat('(\$',$loop-name,'-TotalOccurrenceInt + ',$empty-position,')'))" disable-output-escaping="yes"/>
+								<xsl:value-of select="replace($table-split-content,'PositionInTheLoop',concat('(\$',$table-name,'-TotalOccurrenceInt + ',$empty-position,')'))" disable-output-escaping="yes"/>
 							</xsl:if>
 							<!-- the line to fake-loop on -->
 							<xsl:for-each select="enofo:get-body-lines($source-context)">
@@ -815,10 +816,17 @@
 		<xsl:param name="source-context" as="item()" tunnel="yes"/>
 		<xsl:param name="languages" tunnel="yes"/>
 		<xsl:param name="loop-navigation" as="node()" tunnel="yes"/>
+		<xsl:param name="no-border" tunnel="yes"/>
 
 		<fo:table-cell background-color="#CCCCCC" border-color="black" border-style="solid"
 			number-columns-spanned="{enofo:get-colspan($source-context)}"
 			number-rows-spanned="{enofo:get-rowspan($source-context)}">
+			<xsl:copy-of select="$style-parameters/data-cell/@*"/>
+			<xsl:if test="$no-border = 'no-border'">
+				<xsl:attribute name="border">0mm</xsl:attribute>
+				<xsl:attribute name="padding-top">0mm</xsl:attribute>
+				<xsl:attribute name="padding-bottom">0mm</xsl:attribute>
+			</xsl:if>
 			<fo:block>
 				<xsl:sequence select="enofo:get-label($source-context, $languages[1],$loop-navigation)"/>
 				<xsl:sequence select="enofo:get-fixed-value($source-context, $languages[1],$loop-navigation)"/>
