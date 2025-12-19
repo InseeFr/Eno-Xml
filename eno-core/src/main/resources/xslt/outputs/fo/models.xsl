@@ -1414,11 +1414,22 @@
 		<xsl:param name="loop-navigation" as="node()" tunnel="yes"/>
 		<xsl:param name="isReadonly" tunnel="yes" select="false()"/>
 
+		<xsl:variable name="code-appearance" as="xs:string" select="enofo:get-appearance($source-context)"/>
 		<xsl:variable name="variable-name" as="xs:string">
-			<xsl:call-template name="variable-velocity-name">
-				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
-				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
-			</xsl:call-template>
+			<xsl:choose>
+				<xsl:when test="$code-appearance  = 'suggester'">
+					<xsl:call-template name="variable-velocity-name">
+						<xsl:with-param name="variable" select="enofo:get-suggester-label-name($source-context)"/>
+						<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+					</xsl:call-template>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:call-template name="variable-velocity-name">
+						<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+						<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+					</xsl:call-template>
+				</xsl:otherwise>
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="isInitializableVariable" select="enofo:is-initializable-variable($source-context)"/>
 		<xsl:variable name="personalization-begin">
@@ -1436,7 +1447,7 @@
 			<xsl:when test="$isReadonly">
 				<xsl:value-of select="$variable-name"/>
 			</xsl:when>
-			<xsl:when test="enofo:get-appearance($source-context) = 'drop-down-list' or enofo:get-appearance($source-context) = 'suggester'">
+			<xsl:when test="$code-appearance = 'drop-down-list' or $code-appearance = 'suggester'">
 				<xsl:copy-of select="$personalization-begin"/>
 				<xsl:choose>
 					<xsl:when test="$no-border = 'no-border'">
