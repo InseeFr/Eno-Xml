@@ -1,5 +1,10 @@
 # Eno Releases note
 
+## [2.25.0] - 2025-12-19
+### :sparkles: New Features
+- [`c082a73`](https://github.com/InseeFr/Eno-Xml/commit/c082a73813a45b32d886e3ff34c90875ab409904) - **ddi2fo**: use the 'label' calculated variable to personalize suggester *(PR [#279](https://github.com/InseeFr/Eno-Xml/pull/279) by [@BulotF](https://github.com/BulotF))*
+
+
 ## [2.24.2] - 2025-12-15
 ### :bug: Bug Fixes
 - [`84bc245`](https://github.com/InseeFr/Eno-Xml/commit/84bc245555e26d818102ee78cfe5222f96421a1d) - **deps**: update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.8 *(PR [#269](https://github.com/InseeFr/Eno-Xml/pull/269) by [@renovate[bot]](https://github.com/apps/renovate))*
@@ -515,3 +520,4 @@
 [2.24.0]: https://github.com/InseeFr/Eno-Xml/compare/2.23.1...2.24.0
 [2.24.1]: https://github.com/InseeFr/Eno-Xml/compare/2.24.0...2.24.1
 [2.24.2]: https://github.com/InseeFr/Eno-Xml/compare/2.24.1...2.24.2
+[2.25.0]: https://github.com/InseeFr/Eno-Xml/compare/2.24.2...2.25.0
