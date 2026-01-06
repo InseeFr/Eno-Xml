@@ -1,5 +1,13 @@
 # Eno Releases note
 
+## [2.26.0] - 2026-01-06
+### :sparkles: New Features
+- [`4d98ca0`](https://github.com/InseeFr/Eno-Xml/commit/4d98ca0dae4760293400b2e5602c20a5e8f7eca8) - **fo**: align fixed-cell labels to the left ([#281](https://github.com/InseeFr/Eno-Xml/pull/281)) (version 2.26.0) *(commit by [@BulotF](https://github.com/BulotF))*
+
+### :bug: Bug Fixes
+- [`b93a59f`](https://github.com/InseeFr/Eno-Xml/commit/b93a59f6992e6cf8de1656871bbe34b9fbf88261) - **deps**: update all minor dependencies *(PR [#282](https://github.com/InseeFr/Eno-Xml/pull/282) by [@renovate[bot]](https://github.com/apps/renovate))*
+
+
 ## [2.25.0] - 2025-12-19
 ### :sparkles: New Features
 - [`c082a73`](https://github.com/InseeFr/Eno-Xml/commit/c082a73813a45b32d886e3ff34c90875ab409904) - **ddi2fo**: use the 'label' calculated variable to personalize suggester *(PR [#279](https://github.com/InseeFr/Eno-Xml/pull/279) by [@BulotF](https://github.com/BulotF))*
@@ -521,3 +529,4 @@
 [2.24.1]: https://github.com/InseeFr/Eno-Xml/compare/2.24.0...2.24.1
 [2.24.2]: https://github.com/InseeFr/Eno-Xml/compare/2.24.1...2.24.2
 [2.25.0]: https://github.com/InseeFr/Eno-Xml/compare/2.24.2...2.25.0
+[2.26.0]: https://github.com/InseeFr/Eno-Xml/compare/2.25.0...2.26.0
