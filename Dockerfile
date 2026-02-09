@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17.0.17_10-jre
+FROM eclipse-temurin:17.0.18_8-jre
 
 ENV PATH_TO_JAR=/opt/eno-ws/eno-ws.jar
 WORKDIR /opt/eno-ws/
