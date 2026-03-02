@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>fr.insee.eno</groupId>
 		<artifactId>eno</artifactId>
-		<version>${eno.version}</version>
+		<version>${revision}</version>
 	</parent>
 
 	<artifactId>eno-core</artifactId>

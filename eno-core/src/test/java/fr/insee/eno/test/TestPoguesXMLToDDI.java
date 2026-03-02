@@ -44,6 +44,18 @@ class TestPoguesXMLToDDI {
 		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
 	}
 
+	@Test
+	void pairwiseTest() {
+		String basePath = "src/test/resources/pogues-xml-to-ddi/pairwise";
+		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
+	}
+
+	@Test
+	void pairwiseInLoopTest() {
+		String basePath = "src/test/resources/pogues-xml-to-ddi/pairwise-in-loop";
+		testTransformationInOut(String.format("%s/in.xml", basePath), String.format("%s/out.xml", basePath));
+	}
+
 	private void testTransformationInOut(String inPath, String outPath){
 		try {
 			Preprocessor[] preprocessors = {

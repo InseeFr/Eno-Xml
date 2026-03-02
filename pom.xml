@@ -6,19 +6,19 @@
     <groupId>fr.insee.eno</groupId>
     <artifactId>eno</artifactId>
     <packaging>pom</packaging>
-    <version>${eno.version}</version>
+    <version>${revision}</version>
     <name>eno</name>
 
     <properties>
-        <eno.version>2.26.0</eno.version>
-        <java.version>17</java.version>
+		<revision>v1.6.3</revision>
+        <java.version>25</java.version>
         <project.encoding>UTF-8</project.encoding>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.10</version>
+        <version>4.0.3</version>
     </parent>
 
     <modules>

@@ -563,7 +563,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="driver-VariableGroup//QuestionDynamicTable//ResponseDomain | driver-VariableGroup//QuestionDynamicTable//Clarification | driver-VariableGroup//QuestionPairwise//ResponseDomain" mode="model">
+    <xsl:template match="driver-VariableGroup//QuestionDynamicTable//ResponseDomain | driver-VariableGroup//QuestionDynamicTable//Clarification" mode="model">
         <xsl:param name="source-context" as="item()" tunnel="yes"/>
         <xsl:param name="agency" as="xs:string" tunnel="yes"/>
         <!-- Check if the variable isn't linked to a table or loop by scope to avoid duplication  -->
@@ -578,6 +578,22 @@
                     <r:TypeOfObject>Variable</r:TypeOfObject>
                 </r:VariableReference>
             </xsl:if>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="driver-VariableGroup//QuestionPairwise//ResponseDomain" mode="model">
+        <xsl:param name="source-context" as="item()" tunnel="yes"/>
+        <xsl:param name="agency" as="xs:string" tunnel="yes"/>
+        <!-- Check if the variable isn't linked to a table or loop by scope to avoid duplication  -->
+        <xsl:variable name="relatedVariable" select="enoddi33:get-related-variable($source-context)"/>
+        <!-- Check if reponse is linked to attribute of NoDatabyDefinition by mapping-target -->
+        <xsl:if test="not(enoddi33:is-not-collected($source-context))">
+            <r:VariableReference>
+                <r:Agency><xsl:value-of select="$agency"/></r:Agency>
+                <r:ID><xsl:value-of select="enoddi33:get-id($relatedVariable)"/></r:ID>
+                <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+                <r:TypeOfObject>Variable</r:TypeOfObject>
+            </r:VariableReference>
         </xsl:if>
     </xsl:template>
 

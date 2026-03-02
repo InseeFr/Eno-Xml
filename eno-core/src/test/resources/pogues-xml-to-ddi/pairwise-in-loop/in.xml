@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://xml.insee.fr/schema/applis/pogues" id="mls9blwb" genericName="QUESTIONNAIRE" agency="fr.insee" final="false" flowLogic="FILTER" formulasLanguage="VTL" lastUpdatedDate="2026-02-20T09:20:23.493+0100" owner="DR59-SNDI59">
+  <Name>PAIRWISEPAGE</Name>
+  <Label>Liens 2 à 2 paginé</Label>
+  <TargetMode>CAPI</TargetMode>
+  <TargetMode>CAWI</TargetMode>
+  <TargetMode>CATI</TargetMode>
+  <TargetMode>PAPI</TargetMode>
+  <Child id="mkdumm9l" depth="1" genericName="MODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+    <Name>S1</Name>
+    <Label>Habitants du logement</Label>
+    <TargetMode>CAPI</TargetMode>
+    <TargetMode>CAWI</TargetMode>
+    <TargetMode>CATI</TargetMode>
+    <TargetMode>PAPI</TargetMode>
+    <Child id="mkduvzxm" questionType="SIMPLE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuestionType">
+      <Name>PRENOM</Name>
+      <Label>&quot;Prénom:&quot;</Label>
+      <TargetMode>CAPI</TargetMode>
+      <TargetMode>CAWI</TargetMode>
+      <TargetMode>CATI</TargetMode>
+      <TargetMode>PAPI</TargetMode>
+      <Response id="mkduuxls" mandatory="false">
+        <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+          <MaxLength>249</MaxLength>
+        </Datatype>
+        <CollectedVariableReference>mkdupx40</CollectedVariableReference>
+      </Response>
+    </Child>
+    <Child id="mkdujzn9" questionType="SINGLE_CHOICE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuestionType">
+      <Name>SEXE</Name>
+      <Label>&quot;Sexe:&quot;</Label>
+      <TargetMode>CAPI</TargetMode>
+      <TargetMode>CAWI</TargetMode>
+      <TargetMode>CATI</TargetMode>
+      <TargetMode>PAPI</TargetMode>
+      <Response id="mkdv3ynt" mandatory="false">
+        <CodeListReference>mkdux3h5</CodeListReference>
+        <Datatype typeName="TEXT" visualizationHint="RADIO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+          <MaxLength>1</MaxLength>
+        </Datatype>
+        <CollectedVariableReference>mkduvvvq</CollectedVariableReference>
+      </Response>
+    </Child>
+  </Child>
+  <Child id="mkdus3wr" depth="1" genericName="MODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+    <Name>S2</Name>
+    <Label>Liens entre les habitants du logement</Label>
+    <TargetMode>CAPI</TargetMode>
+    <TargetMode>CAWI</TargetMode>
+    <TargetMode>CATI</TargetMode>
+    <TargetMode>PAPI</TargetMode>
+    <Child id="mls9jp7o" depth="2" genericName="SUBMODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+      <Name>LIENS</Name>
+      <Label>&quot;Les liens de &quot; || PRENOM || &quot;&quot;</Label>
+      <TargetMode>CAPI</TargetMode>
+      <TargetMode>CAWI</TargetMode>
+      <TargetMode>CATI</TargetMode>
+      <TargetMode>PAPI</TargetMode>
+      <Child id="mkdv8ihy" questionType="PAIRWISE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuestionType">
+        <Name>LIENS_HABITANTS</Name>
+        <Label>&quot;Qui est &quot; || yAxis || &quot; pour &quot; || xAxis || &quot; ?&quot;</Label>
+        <TargetMode>CAPI</TargetMode>
+        <TargetMode>CAWI</TargetMode>
+        <TargetMode>CATI</TargetMode>
+        <TargetMode>PAPI</TargetMode>
+        <Response id="mlsap7bb">
+          <CodeListReference>mkdv7h5q</CodeListReference>
+          <Datatype typeName="TEXT" visualizationHint="DROPDOWN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+            <MaxLength>1</MaxLength>
+          </Datatype>
+          <CollectedVariableReference>mlsavfrk</CollectedVariableReference>
+        </Response>
+        <Scope>mkdupx40</Scope>
+        <sourceVariableReferences>
+          <name>mkdupx40</name>
+          <gender>mkduvvvq</gender>
+          <age>
+          </age>
+        </sourceVariableReferences>
+      </Child>
+    </Child>
+  </Child>
+  <Child id="mkdusamd" depth="1" genericName="MODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+    <Name>S3</Name>
+    <Label>Variables globales</Label>
+    <TargetMode>CAPI</TargetMode>
+    <TargetMode>CAWI</TargetMode>
+    <TargetMode>CATI</TargetMode>
+    <TargetMode>PAPI</TargetMode>
+    <Child id="mkdvcykn" questionType="SIMPLE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="QuestionType">
+      <Name>VERIF</Name>
+      <Label>&quot; &quot; || PRENOM || &quot;: votre premier parent est &quot; || GLOBAL_PARENT1_PRENOM || &quot; (&quot; || GLOBAL_PARENT1_SEXE || &quot;), votre second parent est &quot; || GLOBAL_PARENT2_PRENOM || &quot; (&quot; || GLOBAL_PARENT2_SEXE || &quot;), votre partenaire est &quot; || GLOBAL_CONJOINT_PRENOM || &quot;, vos enfants sont &quot; || GLOBAL_ENFANTS_PRENOMS || &quot; &quot;</Label>
+      <TargetMode>CAPI</TargetMode>
+      <TargetMode>CAWI</TargetMode>
+      <TargetMode>CATI</TargetMode>
+      <TargetMode>PAPI</TargetMode>
+      <Response id="mkdv0ium" mandatory="false">
+        <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+          <MaxLength>249</MaxLength>
+        </Datatype>
+        <CollectedVariableReference>mkgp7fkv</CollectedVariableReference>
+      </Response>
+    </Child>
+  </Child>
+  <Child id="mkdvgmn0" depth="1" genericName="MODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+    <Name>S4</Name>
+    <Label>Fin</Label>
+    <TargetMode>CAPI</TargetMode>
+    <TargetMode>CAWI</TargetMode>
+    <TargetMode>CATI</TargetMode>
+    <TargetMode>PAPI</TargetMode>
+  </Child>
+  <Child id="idendquest" depth="1" genericName="MODULE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SequenceType">
+    <Name>QUESTIONNAIRE_END</Name>
+    <Label>QUESTIONNAIRE_END</Label>
+    <TargetMode>CAPI</TargetMode>
+    <TargetMode>CAWI</TargetMode>
+    <TargetMode>CATI</TargetMode>
+    <TargetMode>PAPI</TargetMode>
+  </Child>
+  <DataCollection id="s2193-dc" uri="http://ddi:fr.insee:DataCollection.s2193-dc">
+    <Name>Enquête capacité à innover et stratégie 2024</Name>
+  </DataCollection>
+  <ComponentGroup id="mkduyz84">
+    <Name>PAGE_1</Name>
+    <Label>Components for page 1</Label>
+    <MemberReference>mkdumm9l</MemberReference>
+    <MemberReference>mkduvzxm</MemberReference>
+    <MemberReference>mkdujzn9</MemberReference>
+    <MemberReference>mkdus3wr</MemberReference>
+    <MemberReference>mls9jp7o</MemberReference>
+    <MemberReference>mkdv8ihy</MemberReference>
+    <MemberReference>mkdusamd</MemberReference>
+    <MemberReference>mkdvcykn</MemberReference>
+    <MemberReference>mkdvgmn0</MemberReference>
+    <MemberReference>idendquest</MemberReference>
+  </ComponentGroup>
+  <CodeLists>
+    <CodeList id="mkdux3h5">
+      <Label>Sexe</Label>
+      <Code>
+        <Value>1</Value>
+        <Label>Homme</Label>
+        <Parent>
+        </Parent>
+      </Code>
+      <Code>
+        <Value>2</Value>
+        <Label>Femme</Label>
+        <Parent>
+        </Parent>
+      </Code>
+    </CodeList>
+    <CodeList id="mkdv7h5q">
+      <Label>Liens</Label>
+      <Code>
+        <Value>1</Value>
+        <Label>Conjoint</Label>
+        <Parent>
+        </Parent>
+      </Code>
+      <Code>
+        <Value>2</Value>
+        <Label>Parent</Label>
+        <Parent>
+        </Parent>
+      </Code>
+      <Code>
+        <Value>3</Value>
+        <Label>Enfant</Label>
+        <Parent>
+        </Parent>
+      </Code>
+      <Code>
+        <Value>4</Value>
+        <Label>Autre</Label>
+        <Parent>
+        </Parent>
+      </Code>
+    </CodeList>
+    <CodeList id="">
+      <Label>
+      </Label>
+    </CodeList>
+  </CodeLists>
+  <Variables>
+    <Variable id="mkdupx40" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CollectedVariableType">
+      <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+        <MaxLength>249</MaxLength>
+      </Datatype>
+      <Name>PRENOM</Name>
+      <Label>PRENOM label</Label>
+      <Scope>mkdulmx2</Scope>
+    </Variable>
+    <Variable id="mkduvvvq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CollectedVariableType">
+      <CodeListReference>mkdux3h5</CodeListReference>
+      <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+        <MaxLength>1</MaxLength>
+      </Datatype>
+      <Name>SEXE</Name>
+      <Label>SEXE label</Label>
+      <Scope>mkdulmx2</Scope>
+    </Variable>
+    <Variable id="mlsavfrk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CollectedVariableType">
+      <CodeListReference>mkdv7h5q</CodeListReference>
+      <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+        <MaxLength>1</MaxLength>
+      </Datatype>
+      <Name>LIENS_HABITANTS</Name>
+      <Label>LIENS_HABITANTS label</Label>
+      <Scope>mkdulmx2</Scope>
+    </Variable>
+    <Variable id="mkgp7fkv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CollectedVariableType">
+      <Datatype typeName="TEXT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TextDatatypeType">
+        <MaxLength>249</MaxLength>
+      </Datatype>
+      <Name>VERIF</Name>
+      <Label>VERIF label</Label>
+      <Scope>mkdulmx2</Scope>
+    </Variable>
+  </Variables>
+  <Iterations>
+    <Iteration id="mkdulmx2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DynamicIterationType">
+      <Name>HABITANTS</Name>
+      <Label>&quot;Ajouter un habitant&quot;</Label>
+      <MemberReference>mkdumm9l</MemberReference>
+      <MemberReference>mkdumm9l</MemberReference>
+      <Minimum>1</Minimum>
+      <Maximum>10</Maximum>
+      <isFixedLength>false</isFixedLength>
+      <minimum>1</minimum>
+      <maximum>10</maximum>
+      <Step>1</Step>
+    </Iteration>
+    <Iteration id="mkduz03e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DynamicIterationType">
+      <Name>HABITANTS3</Name>
+      <MemberReference>mkdusamd</MemberReference>
+      <MemberReference>mkdusamd</MemberReference>
+      <IterableReference>mkdulmx2</IterableReference>
+    </Iteration>
+    <Iteration id="mls97zse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DynamicIterationType">
+      <Name>HABITANTS_LIENS</Name>
+      <MemberReference>mls9jp7o</MemberReference>
+      <MemberReference>mls9jp7o</MemberReference>
+      <IterableReference>mkdulmx2</IterableReference>
+    </Iteration>
+  </Iterations>
+</Questionnaire>
