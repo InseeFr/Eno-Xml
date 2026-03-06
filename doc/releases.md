@@ -1,13 +1,5 @@
 # Eno Releases note
 
-## [2.27.1] - 2026-03-02
-### :bug: Bug Fixes
-- [`08ffd81`](https://github.com/InseeFr/Eno-Xml/commit/08ffd814643aa998a3c67043f9dad73149974fd7) - **deps**: update dependency org.springframework.boot:spring-boot-starter-parent to v3.5.10 *(PR [#283](https://github.com/InseeFr/Eno-Xml/pull/283) by [@renovate[bot]](https://github.com/apps/renovate))*
-
-### :construction_worker: Build System
-- [`e397e96`](https://github.com/InseeFr/Eno-Xml/commit/e397e96421ddfd5f537d44ecc76e26052ff36243) - **build**: switch to java 17 to java 25 *(commit by [@laurentC35](https://github.com/laurentC35))*
-
-
 ## [2.26.0] - 2026-01-06
 ### :sparkles: New Features
 - [`4d98ca0`](https://github.com/InseeFr/Eno-Xml/commit/4d98ca0dae4760293400b2e5602c20a5e8f7eca8) - **fo**: align fixed-cell labels to the left ([#281](https://github.com/InseeFr/Eno-Xml/pull/281)) (version 2.26.0) *(commit by [@BulotF](https://github.com/BulotF))*
@@ -538,4 +530,3 @@
 [2.24.2]: https://github.com/InseeFr/Eno-Xml/compare/2.24.1...2.24.2
 [2.25.0]: https://github.com/InseeFr/Eno-Xml/compare/2.24.2...2.25.0
 [2.26.0]: https://github.com/InseeFr/Eno-Xml/compare/2.25.0...2.26.0
-[2.27.1]: https://github.com/InseeFr/Eno-Xml/compare/2.26.0...2.27.1
