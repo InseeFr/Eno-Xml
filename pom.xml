@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
     <version>${revision}</version>
     <name>eno</name>
-
     <properties>
 		<revision>2.29.1</revision>
         <java.version>25</java.version>

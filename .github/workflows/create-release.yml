@@ -1,16 +1,29 @@
-name: Eno-WS XML release
+name: Build release
 
 on:
   push:
     branches:
       - "main"
     paths-ignore:
+      - "logo/**"
       - "docs/**"
-      - "doc/**"
-      - "README.md"
+      - "CHANGELOG.md"
+      - "README**.md"
+      - "Dockerfile"
+      - ".github/**"
+
+# TL;DR: Do conventional commits,
+# bump the version before pushing on main,
+# the workflow will publish a release.
+
+# This workflow is triggered when changes are pushed on the main branch.
+# It checks that the version is valid, and has not already been released.
+# From the new version, if creates a tag, a GitHub release, a changelog
+# (also based on conventional commits), and publishes an image on Docker Hub.
 
 env:
   JAVA_VERSION: "25"
+  RELEASE_NOTE_EXCLUDED_TYPES: docs,style,chore,other
 
 jobs:
   test:
@@ -26,123 +39,231 @@ jobs:
         run: mvn clean process-classes package install --no-transfer-progress -DskipTests=true -Dmaven.javadoc.skip=true -Djar.finalName="eno-core" -B -V --file pom.xml
       - name: Run test with Maven
         run: mvn test --no-transfer-progress
-
-  check-version:
+  version:
     runs-on: ubuntu-latest
     outputs:
-      release-version: ${{ steps.version.outputs.version }}
+      release-version: ${{ steps.version-number.outputs.value }}
       previous-version: ${{ steps.previousTag.outputs.previousTag }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0 # needed to get previous tag
 
       - name: Set up JDK
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: ${{ env.JAVA_VERSION }}
 
-      - name: Get version
-        id: version
-        run: echo "version=$(mvn -f pom.xml help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_OUTPUT
+      - name: Get Eno Version
+        id: version-step
+        run: |
+          echo "version=$(mvn -f pom.xml help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_OUTPUT
 
-      - name: Print version
-        run: echo ${{ steps.version.outputs.version }}
-
-      - name: Get previous release tag
+      - name: Get previous final release tag
         id: previousTag
-        run: echo "previousTag=$(git --no-pager tag --sort=creatordate --merged ${{ github.ref_name }} | grep "^2\.[0-9]\+\.[0-9]\+$" | tail -1)" >> $GITHUB_OUTPUT
+        run: echo "previousTag=$(git --no-pager tag --sort=creatordate --merged ${{ github.ref_name }} | grep "^[3-9]\.[0-9]\+\.[0-9]\+$" | tail -1)" >> $GITHUB_OUTPUT
+        # Note: the regex works for single digit major version, to be updated if the version goes 10.0.0 or more
 
-      - name: Print previous tag version
-        run: echo ${{ steps.previousTag.outputs.previousTag }}
+      - name: Compare version to previous release tag
+        id: compare-step
+        run: |
+          echo ""
+          echo "Eno version:  ${{ steps.version-step.outputs.version }}"
+          echo "Previous tag: ${{ steps.previousTag.outputs.previousTag }}"
+
+          yesOrNo="no"
+          if [[ ${{steps.version-step.outputs.version != steps.previousTag.outputs.previousTag}} ]]; then
+            yesOrNo="yes"
+          fi
+          echo "Was the version changed? $yesOrNo"
+          echo "hasVersionChanged=$yesOrNo" >> $GITHUB_OUTPUT
+
+      - name: (Semantic version) Calculate release version
+        if: ${{ steps.compare-step.outputs.hasVersionChanged == 'no' }}
+        id: compute-version
+        #uses: <find an action that does the job>
+        run: |
+          echo "Semantic version is not implemented yet ❌️"
+          echo "Bump the version to trigger the release workflow."
+          exit 1
+
+      - name: Release version number
+        id: version-number
+        run: |
+          versionNumber="undefined" # update this when semantic version is done
+          if [[ ${{steps.compare-step.outputs.hasVersionChanged}} == "yes" ]]; then
+            versionNumber=${{ steps.version-step.outputs.version }}
+          fi
+          echo "Version to be released: $versionNumber"
+          echo "value=$versionNumber" >> $GITHUB_OUTPUT
 
       - name: Check tag existence
         id: check-tag-exists
-        uses: mukunku/tag-exists-action@v1.7.0
+        uses: mukunku/tag-exists-action@5c39604fe8aef7e65acb6fbcf96ec580f7680313 # v1.7.0
         with:
-          tag: "${{ steps.version.outputs.version }}"
+          tag: ${{ steps.version-step.outputs.version }}
 
       - name: Tag verification
-        id: check-tag
         run: |
-          if ! [[ "${{ steps.version.outputs.version }}" =~ ^2.[0-9]+.[0-9]+$ ]]; then
-            echo "Version on main ${{ steps.version.outputs.version }} branch does not match the format 2.Y.Z"
-            exit 1
-          fi
-
           if [[ "${{ steps.check-tag-exists.outputs.exists }}" == "true" ]]; then
-            echo "Nothing to tag/release, the tag ${{ steps.version.outputs.version }} already exists"
+            echo "Version ${{ steps.version-number.outputs.value }} cannot be released, tag already exists"
             exit 1
           fi
 
-  publish-docker:
-    needs: [test, check-version]
+          if ! [[ "${{ steps.version-number.outputs.value }}" =~ ^[0-9]+.[0-9]+.[0-9]+$ ]]; then
+            echo "The version ${{ steps.version-number.outputs.value }} is not in correct release format X.Y.Z"
+            exit 1
+          fi
+
+  sonar:
+    name: Sonar analysis
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: "temurin"
 
-      - name: Set up Java
-        uses: actions/setup-java@v5
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+
+      - name: Build and analyze
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
+          SONAR_HOST_URL: "https://sonarcloud.io"
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn clean verify -Pcoverage org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=InseeFr_Eno -Dsonar.organization=inseefr --no-transfer-progress
+
+  build-sources:
+    needs: version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up JDK
+        uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: ${{ env.JAVA_VERSION }}
 
-      - name: Build Eno-WS
-        run: mvn clean process-classes package install --no-transfer-progress -DskipTests=true
+      - uses: actions/checkout@v4
+      - name: Build Eno modules
+        run: |
+          mvn package -DskipTests --no-transfer-progress
 
-      - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v5
+      - name: Upload Eno-WS jar
+        uses: actions/upload-artifact@v4
         with:
-          name: inseefr/eno-ws
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          tags: ${{ needs.check-version.outputs.release-version }}
+          name: eno-ws-jar
+          path: ./eno-ws/target/eno-ws-${{ needs.version.outputs.release-version }}.jar
 
   create-release:
-    needs: check-version
+    needs: [version, build-sources]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
-          fetch-tags: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag
-        uses: rickstaa/action-create-tag@v1
+        uses: rickstaa/action-create-tag@a1c7777fcb2fee4f19b0f283ba888afa11678b72 # v1.7.2
         with:
-          tag: "${{ needs.check-version.outputs.release-version }}"
-
-      - name: Print tag upgrade
-        run: echo "From ${{ needs.check-version.outputs.previous-version }} to ${{ needs.check-version.outputs.release-version }}"
+          tag: ${{ needs.version.outputs.release-version }}
 
       - name: Create release note
         id: changelog
-        uses: requarks/changelog-action@v1
+        uses: requarks/changelog-action@b78a3354a01f4a1affb484b9264b506a815c46b1 # v1.10.3
         with:
-          fromTag: "${{ needs.check-version.outputs.release-version }}"
-          toTag: "${{ needs.check-version.outputs.previous-version }}"
-          excludeTypes: docs,style,chore,other
+          fromTag: ${{ needs.version.outputs.release-version }}
+          toTag: ${{ needs.version.outputs.previous-version }}
+          excludeTypes: ${{ env.RELEASE_NOTE_EXCLUDED_TYPES }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          writeToFile: false
+
+      - name: Download build
+        id: download
+        uses: actions/download-artifact@v4
+        with:
+          name: eno-ws-jar
+          path: eno-ws/target/
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
+        with:
+          tag_name: ${{ needs.version.outputs.release-version }}
+          target_commitish: ${{ github.head_ref || github.ref }}
+          name: ${{ needs.version.outputs.release-version }}
+          body: ${{ steps.changelog.outputs.changes }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Separate job for committing in the changelog file since I got bored that auto commit action randomly fails
+  commit-changelog:
+    needs: [version, create-release]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create release note
+        id: changelog
+        uses: requarks/changelog-action@b78a3354a01f4a1affb484b9264b506a815c46b1 # v1.10.3
+        with:
+          fromTag: ${{ needs.version.outputs.release-version }}
+          toTag: ${{ needs.version.outputs.previous-version }}
+          excludeTypes: ${{ env.RELEASE_NOTE_EXCLUDED_TYPES }}
           token: ${{ secrets.GITHUB_TOKEN }}
           writeToFile: true
-          changelogFilePath: "doc/releases.md"
-
-      - name: Create release
-        uses: ncipollo/release-action@v1 # This action allows to publish non 'latest' releases
-        with:
-          tag: "${{ needs.check-version.outputs.release-version }}"
-          commit: ${{ github.head_ref || github.ref }}
-          name: "${{ needs.check-version.outputs.release-version }}"
-          body: ${{steps.changelog.outputs.changes}}
-          makeLatest: "true"
+          changelogFilePath: "CHANGELOG.md"
 
       - name: Commit changelog file
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
         with:
           branch: "main"
-          commit_message: "docs(changelog): ${{ needs.check-version.outputs.release-version }} update [skip ci]"
-          file_pattern: "doc/releases.md"
+          commit_message: "docs(changelog): ${{ needs.version.outputs.release-version }} update [skip ci]"
+          file_pattern: "CHANGELOG.md"
+
+  publish-docker:
+    needs: [version, build-sources]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Eno-WS jar
+        uses: actions/download-artifact@v4
+        with:
+          name: eno-ws-jar
+          path: ./eno-ws/target
+
+      - name: Publish to Docker Hub
+        uses: elgohr/Publish-Docker-Github-Action@4feac4d53e4e55dcc5d3e2ad0ed2e0a76028ff7a # v5
+        with:
+          name: inseefr/eno-ws
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          default_branch: ${{ github.ref }}
+          tags: "latest,${{ needs.version.outputs.release-version }}"
