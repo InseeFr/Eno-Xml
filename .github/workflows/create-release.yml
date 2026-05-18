@@ -170,8 +170,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: eno-ws-jar
-          path: ./eno-ws/target/eno-ws-${{ needs.version.outputs.release-version }}.jar
-
+          path: ./eno-ws/target/*.jar
   create-release:
     needs: [version, build-sources]
     runs-on: ubuntu-latest
