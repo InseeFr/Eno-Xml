@@ -855,6 +855,7 @@
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:call-template name="variable-velocity-name">
 				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+				<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 			</xsl:call-template>
 		</xsl:variable>
@@ -919,6 +920,7 @@
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:call-template name="variable-velocity-name">
 				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+				<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 			</xsl:call-template>
 		</xsl:variable>
@@ -1022,10 +1024,10 @@
 
 		<xsl:variable name="length" select="number(enofo:get-length($source-context))"/>
 		<xsl:variable name="label" select="enofo:get-label($source-context, $languages[1],$loop-navigation)"/>
-		<xsl:variable name="variable-business-name" select="enofo:get-business-name($source-context)"/>
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:call-template name="variable-velocity-name">
-				<xsl:with-param name="variable" select="$variable-business-name"/>
+				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+				<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 			</xsl:call-template>
 		</xsl:variable>
@@ -1205,10 +1207,10 @@
 				<xsl:value-of select="'DD'"/>
 			</xsl:if>
 		</xsl:variable>
-		<xsl:variable name="variable-business-name" select="enofo:get-business-name($source-context)"/>
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:call-template name="variable-velocity-name">
-				<xsl:with-param name="variable" select="$variable-business-name"/>
+				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+				<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 			</xsl:call-template>
 		</xsl:variable>
@@ -1288,6 +1290,7 @@
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:call-template name="variable-velocity-name">
 				<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+				<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 				<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 			</xsl:call-template>
 		</xsl:variable>
@@ -1428,12 +1431,14 @@
 				<xsl:when test="$code-appearance  = 'suggester'">
 					<xsl:call-template name="variable-velocity-name">
 						<xsl:with-param name="variable" select="enofo:get-suggester-label-name($source-context)"/>
+						<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 						<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:call-template name="variable-velocity-name">
 						<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
+						<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
 						<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 					</xsl:call-template>
 				</xsl:otherwise>
@@ -1519,7 +1524,14 @@
 		<xsl:variable name="isInitializableVariable" select="enofo:is-initializable-variable($source-context)"/>
 		<xsl:variable name="testimageCheckedOrNot" as="node() *">
 			<xsl:if test="$isInitializableVariable">
-				<xsl:value-of select="concat('#{if}(',$variable-name,' eq ''',enofo:get-value($source-context),''') ')"/>
+				<xsl:choose>
+					<xsl:when test="ancestor::BooleanDomain">
+						<xsl:value-of select="concat('#{if}(',$variable-name,' eq ''',enofo:get-value($source-context),''' or ',$variable-name,' eq ''true'') ')"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="concat('#{if}(',$variable-name,' eq ''',enofo:get-value($source-context),''') ')"/>
+					</xsl:otherwise>
+				</xsl:choose>
 				<xsl:call-template name="insert-image">
 					<xsl:with-param name="image-name" select="'checkbox_selected.png'"/>
 				</xsl:call-template>
@@ -1622,6 +1634,7 @@
 				<xsl:variable name="variable-business-name">
 					<xsl:call-template name="variable-velocity-name">
 						<xsl:with-param name="variable" select="enofo:get-variable-business-name($source-context,$current-variable)"/>
+						<xsl:with-param name="variable-loop" select="enofo:get-variable-business-ancestors($source-context,$current-variable)"/>
 						<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
 					</xsl:call-template>
 				</xsl:variable>
@@ -1756,15 +1769,57 @@
 																</xsl:call-template>
 															</xsl:matching-substring>
 															<xsl:non-matching-substring>
-																<xsl:call-template name="replaceVariablesInFormula">
-																	<xsl:with-param name="formula" select="replace($formula,$variable-initial-name,concat('\',$variable-business-name))"/>
-																	<xsl:with-param name="variables" as="node()">
-																		<Variables>
-																			<xsl:copy-of select="$variables/Variable[position() != 1 ]"/>
-																		</Variables>
-																	</xsl:with-param>
-																	<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
-																</xsl:call-template>
+																<!-- blablanvl(¤var_boolean¤,false)blibli
+																	becomes: blabla (${var_name}) blibli -->
+																<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *(false|true) *\)(.*)$">
+																	<xsl:matching-substring>
+																		<xsl:call-template name="replaceVariablesInFormula">
+																			<xsl:with-param name="formula" select="regex-group(1)"/>
+																			<xsl:with-param name="variables" select="$variables" as="node()"/>
+																			<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																		</xsl:call-template>
+																		<xsl:value-of select="concat('(',$variable-business-name)"/>
+																		<xsl:if test="regex-group(2) = 'true'">
+																			<xsl:value-of select="concat(' or !',$variable-business-name)"/>
+																		</xsl:if>
+																		<xsl:value-of select="')'"/>
+																		<xsl:call-template name="replaceVariablesInFormula">
+																			<xsl:with-param name="formula" select="regex-group(3)"/>
+																			<xsl:with-param name="variables" select="$variables" as="node()"/>
+																			<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																		</xsl:call-template>
+																	</xsl:matching-substring>
+																	<xsl:non-matching-substring>
+																		<!-- blablaisnull(¤var_id¤)blibli
+																			becomes: blabla !${var_name} blibli -->
+																		<xsl:analyze-string select="$formula" regex="^(.*)isnull *\( *{$variable-initial-name} *\)(.*)$">
+																			<xsl:matching-substring>
+																				<xsl:call-template name="replaceVariablesInFormula">
+																					<xsl:with-param name="formula" select="regex-group(1)"/>
+																					<xsl:with-param name="variables" select="$variables" as="node()"/>
+																					<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																				</xsl:call-template>
+																				<xsl:value-of select="concat('!',$variable-business-name)"/>
+																				<xsl:call-template name="replaceVariablesInFormula">
+																					<xsl:with-param name="formula" select="regex-group(2)"/>
+																					<xsl:with-param name="variables" select="$variables" as="node()"/>
+																					<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																				</xsl:call-template>
+																			</xsl:matching-substring>
+																			<xsl:non-matching-substring>
+																				<xsl:call-template name="replaceVariablesInFormula">
+																					<xsl:with-param name="formula" select="replace($formula,$variable-initial-name,concat('\',$variable-business-name))"/>
+																					<xsl:with-param name="variables" as="node()">
+																						<Variables>
+																							<xsl:copy-of select="$variables/Variable[position() != 1 ]"/>
+																						</Variables>
+																					</xsl:with-param>
+																					<xsl:with-param name="loop-navigation" select="$loop-navigation" as="node()"/>
+																				</xsl:call-template>
+																			</xsl:non-matching-substring>
+																		</xsl:analyze-string>
+																	</xsl:non-matching-substring>
+																</xsl:analyze-string>
 															</xsl:non-matching-substring>
 														</xsl:analyze-string>
 													</xsl:non-matching-substring>
@@ -1795,23 +1850,26 @@
 	</xd:doc>
 	<xsl:template name="variable-velocity-name">
 		<xsl:param name="variable"/>
+		<xsl:param name="variable-loop"/>
 		<xsl:param name="loop-navigation" as="node()"/>
 
 		<xsl:variable name="variable-name">
 			<xsl:value-of select="'$!{'"/>
-			<xsl:value-of select="$loop-navigation//Loop[last()]/@name"/>
-			<xsl:choose>
-				<!-- variable in empty occurrence after loop -->
-				<xsl:when test="$loop-navigation//Loop[last()]/text() != ''">
-					<xsl:value-of select="'-0-'"/>
-				</xsl:when>
-				<!-- variable in loop occurrence -->
-				<xsl:when test="$loop-navigation//Loop">
-					<xsl:value-of select="'.'"/>
-				</xsl:when>
-				<!-- variable out of loops -->
-				<xsl:otherwise/>
-			</xsl:choose>
+			<xsl:if test="contains($variable-loop, $loop-navigation//Loop[last()]/@name)">
+				<xsl:value-of select="$loop-navigation//Loop[last()]/@name"/>
+				<xsl:choose>
+					<!-- variable in empty occurrence after loop -->
+					<xsl:when test="$loop-navigation//Loop[last()]/text() != ''">
+						<xsl:value-of select="'-0-'"/>
+					</xsl:when>
+					<!-- variable in loop occurrence -->
+					<xsl:when test="$loop-navigation//Loop">
+						<xsl:value-of select="'.'"/>
+					</xsl:when>
+					<!-- variable out of loops -->
+					<xsl:otherwise/>
+				</xsl:choose>
+			</xsl:if> 
 			<xsl:value-of select="$variable"/>
 			<xsl:value-of select="'}'"/>
 		</xsl:variable>

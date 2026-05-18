@@ -261,7 +261,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{READY} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{READY} eq '1' or $!{READY} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -352,9 +352,7 @@
                                          width="8mm"
                                          border-color="black"
                                          border-style="solid">
-                        <fo:block>
-									 
-								</fo:block>
+                        <fo:block> </fo:block>
                      </fo:block-container>
                   </fo:inline-container>#{end}</fo:block>
             </fo:block>
@@ -406,9 +404,7 @@
                                          width="16mm"
                                          border-color="black"
                                          border-style="solid">
-                        <fo:block>
-									 
-								</fo:block>
+                        <fo:block> </fo:block>
                      </fo:block-container>
                   </fo:inline-container>#{end}</fo:block>
             </fo:block>
@@ -615,7 +611,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{PET1} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{PET1} eq '1' or $!{PET1} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -629,7 +625,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{PET2} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{PET2} eq '1' or $!{PET2} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -643,7 +639,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{PET3} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{PET3} eq '1' or $!{PET3} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -657,7 +653,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{PET4} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{PET4} eq '1' or $!{PET4} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -1450,9 +1446,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES11})$!{PERCENTAGE_EXPENSES11}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1487,9 +1481,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES21})$!{PERCENTAGE_EXPENSES21}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1537,9 +1529,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES31})$!{PERCENTAGE_EXPENSES31}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1574,9 +1564,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES41})$!{PERCENTAGE_EXPENSES41}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1611,9 +1599,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES51})$!{PERCENTAGE_EXPENSES51}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1661,9 +1647,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES61})$!{PERCENTAGE_EXPENSES61}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -1698,9 +1682,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{PERCENTAGE_EXPENSES71})$!{PERCENTAGE_EXPENSES71}#{else}<fo:inline-container width="15mm">
                                     <fo:block-container height="8mm" width="15mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}<fo:inline padding-start="2mm">%</fo:inline>
                               </fo:block>
@@ -2089,7 +2071,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL11} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL11} eq '1' or $!{TRAVEL11} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2110,7 +2092,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL12} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL12} eq '1' or $!{TRAVEL12} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2131,7 +2113,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL13} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL13} eq '1' or $!{TRAVEL13} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2152,7 +2134,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL14} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL14} eq '1' or $!{TRAVEL14} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2173,7 +2155,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL15} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL15} eq '1' or $!{TRAVEL15} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2194,7 +2176,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL16} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL16} eq '1' or $!{TRAVEL16} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2230,7 +2212,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL21} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL21} eq '1' or $!{TRAVEL21} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2251,7 +2233,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL22} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL22} eq '1' or $!{TRAVEL22} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2272,7 +2254,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL23} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL23} eq '1' or $!{TRAVEL23} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2293,7 +2275,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL24} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL24} eq '1' or $!{TRAVEL24} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2314,7 +2296,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL25} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL25} eq '1' or $!{TRAVEL25} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2335,7 +2317,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL26} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL26} eq '1' or $!{TRAVEL26} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2371,7 +2353,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL31} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL31} eq '1' or $!{TRAVEL31} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2392,7 +2374,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL32} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL32} eq '1' or $!{TRAVEL32} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2413,7 +2395,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL33} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL33} eq '1' or $!{TRAVEL33} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2434,7 +2416,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL34} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL34} eq '1' or $!{TRAVEL34} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2455,7 +2437,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL35} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL35} eq '1' or $!{TRAVEL35} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2476,7 +2458,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL36} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL36} eq '1' or $!{TRAVEL36} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2512,7 +2494,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL41} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL41} eq '1' or $!{TRAVEL41} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2533,7 +2515,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL42} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL42} eq '1' or $!{TRAVEL42} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2554,7 +2536,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL43} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL43} eq '1' or $!{TRAVEL43} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2575,7 +2557,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL44} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL44} eq '1' or $!{TRAVEL44} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2596,7 +2578,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL45} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL45} eq '1' or $!{TRAVEL45} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2617,7 +2599,7 @@
                            <fo:list-block>
                               <fo:list-item>
                                  <fo:list-item-label end-indent="label-end()">
-                                    <fo:block text-align="right">#{if}($!{TRAVEL46} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                                    <fo:block text-align="right">#{if}($!{TRAVEL46} eq '1' or $!{TRAVEL46} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                                  </fo:list-item-label>
                                  <fo:list-item-body start-indent="body-start()">
                                     <fo:block color="black"
@@ -2722,9 +2704,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2755,9 +2735,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2788,9 +2766,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2821,9 +2797,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2854,9 +2828,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2887,9 +2859,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2920,9 +2890,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2953,9 +2921,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -2986,9 +2952,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3019,9 +2983,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3052,9 +3014,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3085,9 +3045,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3118,9 +3076,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3151,9 +3107,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3184,9 +3138,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3217,9 +3169,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3250,9 +3200,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3283,9 +3231,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3316,9 +3262,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3349,9 +3293,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3382,9 +3324,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3415,9 +3355,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3448,9 +3386,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3481,9 +3417,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3514,9 +3448,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3547,9 +3479,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3580,9 +3510,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3613,9 +3541,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3646,9 +3572,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3679,9 +3603,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3712,9 +3634,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3745,9 +3665,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3778,9 +3696,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3811,9 +3727,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3844,9 +3758,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3877,9 +3789,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3910,9 +3820,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3943,9 +3851,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -3976,9 +3882,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4009,9 +3913,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4042,9 +3944,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4075,9 +3975,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4108,9 +4006,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4141,9 +4037,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4174,9 +4068,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4207,9 +4099,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4240,9 +4130,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4273,9 +4161,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4306,9 +4192,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4339,9 +4223,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4372,9 +4254,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4405,9 +4285,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4438,9 +4316,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4471,9 +4347,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4504,9 +4378,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4537,9 +4409,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4570,9 +4440,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4603,9 +4471,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4636,9 +4502,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4669,9 +4533,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4702,9 +4564,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4735,9 +4595,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4768,9 +4626,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4801,9 +4657,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4834,9 +4688,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4867,9 +4719,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4900,9 +4750,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4933,9 +4781,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4966,9 +4812,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -4999,9 +4843,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5032,9 +4874,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5065,9 +4905,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5098,9 +4936,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5131,9 +4967,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5164,9 +4998,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5197,9 +5029,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5230,9 +5060,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5263,9 +5091,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5296,9 +5122,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5329,9 +5153,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5362,9 +5184,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5395,9 +5215,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5428,9 +5246,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5461,9 +5277,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5494,9 +5308,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5527,9 +5339,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5560,9 +5370,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5593,9 +5401,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5626,9 +5432,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5659,9 +5463,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5692,9 +5494,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5725,9 +5525,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5758,9 +5556,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5791,9 +5587,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5824,9 +5618,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5857,9 +5649,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5890,9 +5680,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5923,9 +5711,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5956,9 +5742,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>
@@ -5989,9 +5773,7 @@
                                         font-size="10pt"
                                         padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:inline-container width="9mm">
                                     <fo:block-container height="8mm" width="9mm">
-                                       <fo:block>
-									 
-								</fo:block>
+                                       <fo:block> </fo:block>
                                     </fo:block-container>
                                  </fo:inline-container>#{end}</fo:block>
                            </fo:block>

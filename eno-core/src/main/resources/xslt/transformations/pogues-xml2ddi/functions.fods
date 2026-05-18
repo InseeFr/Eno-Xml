@@ -1662,6 +1662,18 @@
       <text:p>Return all Roundabouts elements of the survey.</text:p>
      </table:table-cell>
     </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi33:get-variableReferences</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enopogues:get-variableReferences</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Return all distinct variableReference elements of the survey.</text:p>
+     </table:table-cell>
+    </table:table-row>
    </table:table>
    <table:named-expressions/>
    <table:database-ranges>

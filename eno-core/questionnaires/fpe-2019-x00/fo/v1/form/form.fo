@@ -2754,7 +2754,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{RAISPROMO_1} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{RAISPROMO_1} eq '1' or $!{RAISPROMO_1} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2768,7 +2768,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{RAISPROMO_2} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{RAISPROMO_2} eq '1' or $!{RAISPROMO_2} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2782,7 +2782,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{RAISPROMO_3} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{RAISPROMO_3} eq '1' or $!{RAISPROMO_3} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2796,7 +2796,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{RAISPROMO_4} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{RAISPROMO_4} eq '1' or $!{RAISPROMO_4} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2810,7 +2810,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{RAISPROMO_A} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{RAISPROMO_A} eq '1' or $!{RAISPROMO_A} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2940,7 +2940,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{TP_CHOISI} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{TP_CHOISI} eq '1' or $!{TP_CHOISI} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"
@@ -2954,7 +2954,7 @@
             <fo:list-block>
                <fo:list-item>
                   <fo:list-item-label end-indent="label-end()">
-                     <fo:block text-align="right">#{if}($!{TP_SUBI} eq '1') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
+                     <fo:block text-align="right">#{if}($!{TP_SUBI} eq '1' or $!{TP_SUBI} eq 'true') <fo:external-graphic src="checkbox_selected.png"/>#{else}<fo:external-graphic src="check_case.png"/>#{end}</fo:block>
                   </fo:list-item-label>
                   <fo:list-item-body start-indent="body-start()">
                      <fo:block color="black"

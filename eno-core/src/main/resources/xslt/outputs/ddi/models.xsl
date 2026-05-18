@@ -452,6 +452,19 @@
     	</xsl:if>
     </xsl:template>
 
+    <xsl:template match="driver-VariableScheme//VariableCodeListReference" mode="model">
+        <xsl:param name="source-context" as="item()" tunnel="yes"/>
+        <xsl:param name="agency" as="xs:string" tunnel="yes"/>
+        <r:CodeRepresentation>
+            <r:CodeListReference>
+                <r:Agency><xsl:value-of select="$agency"/></r:Agency>
+                <r:ID><xsl:value-of select="enoddi33:get-code-list-id($source-context)"/></r:ID>
+                <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+                <r:TypeOfObject>CodeList</r:TypeOfObject>
+            </r:CodeListReference>
+        </r:CodeRepresentation>
+    </xsl:template>
+
     <xsl:template match="driver-VariableScheme//Unit" mode="model">
         <xsl:param name="source-context" as="item()" tunnel="yes"/>
         <xsl:variable name="unit" select="enoddi33:get-unit($source-context)"/>
@@ -924,6 +937,11 @@
                     <xsl:with-param name="driver" select="." tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:if>
+            <!-- Output the codelists from VariableReference -->
+            <xsl:apply-templates select="enoddi33:get-variableReferences($source-context)" mode="source">
+                <xsl:with-param name="driver" select="eno:append-empty-element('driver-VariableCodeListReference', .)" tunnel="yes"/>
+                <xsl:with-param name="agency" select="$agency" as="xs:string" tunnel="yes"/>
+            </xsl:apply-templates>
             <!-- If needed, create the boolean codeList. -->
             <xsl:if test="enoddi33:exist-boolean($source-context)">
                 <l:CodeList>
@@ -1018,6 +1036,35 @@
         </l:CodeList>
     </xsl:template>
 
+    <xsl:template match="driver-VariableCodeListReference//*" mode="model">
+        <xsl:param name="source-context" as="item()" tunnel="yes"/>
+        <xsl:param name="agency" as="xs:string" tunnel="yes"/>
+        
+        <l:CodeList>
+            <r:Agency><xsl:value-of select="$agency"/></r:Agency>
+            <r:ID>
+                <xsl:value-of select="enoddi33:get-code-list-id($source-context)"/></r:ID>
+            <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+            <r:Label>
+                <r:Content xml:lang="{enoddi33:get-lang($source-context)}">
+                    <xsl:value-of select="concat('Liste basée sur les valeurs de ',enoddi33:get-name($source-context))"/>
+                </r:Content>
+            </r:Label>
+            <l:HierarchyType>Regular</l:HierarchyType>
+            <l:Level levelNumber="1">
+                <l:CategoryRelationship>Ordinal</l:CategoryRelationship>
+            </l:Level>
+            <r:BasedOnObject>
+                <r:BasedOnReference>
+                    <r:Agency><xsl:value-of select="$agency"/></r:Agency>
+                    <r:ID><xsl:value-of select="enoddi33:get-id($source-context)"/></r:ID>
+                    <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+                    <r:TypeOfObject><xsl:value-of select="'Variable'"/></r:TypeOfObject>
+                </r:BasedOnReference>
+            </r:BasedOnObject>
+        </l:CodeList>
+    </xsl:template>
+    
     <xsl:template match="driver-CodeListScheme//Code" mode="model">
         <xsl:param name="source-context" as="item()" tunnel="yes"/>
         <xsl:param name="agency" as="xs:string" tunnel="yes"/>
@@ -2144,6 +2191,17 @@
         <r:CodeListReference>	
             <r:Agency><xsl:value-of select="$agency"/></r:Agency>
             <r:ID><xsl:value-of select="enoddi33:get-id($source-context)"/></r:ID>
+            <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+            <r:TypeOfObject>CodeList</r:TypeOfObject>
+        </r:CodeListReference>
+    </xsl:template>
+
+    <xsl:template match="driver-CodeListReference//VariableCodeListReference | ResponseDomain[(ancestor::QuestionSingleChoice or ancestor::QuestionPairwise) and not(ancestor::driver-OutParameter) and not(ancestor::driver-Binding)]/VariableCodeListReference" mode="model" priority="2">
+        <xsl:param name="source-context" as="item()" tunnel="yes"/>
+        <xsl:param name="agency" as="xs:string" tunnel="yes"/>
+        <r:CodeListReference>	
+            <r:Agency><xsl:value-of select="$agency"/></r:Agency>
+            <r:ID><xsl:value-of select="enoddi33:get-code-list-id($source-context)"/></r:ID>
             <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
             <r:TypeOfObject>CodeList</r:TypeOfObject>
         </r:CodeListReference>

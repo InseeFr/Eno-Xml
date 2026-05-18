@@ -1149,6 +1149,20 @@
     </table:table-row>
     <table:table-row table:style-name="ro2">
      <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enofo:get-variable-business-ancestors</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>variable</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:get-variable-business-ancestors</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Default" office:value-type="string" calcext:value-type="string">
+      <text:p>Linking output function enofo:get-variable-business-ancestors to input function enoddi:get-variable-business-ancestors</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>enofo:get-constraint-dependencies</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -1243,6 +1257,18 @@
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Linking output function enofo:get-business-name to input function enoddi:get-business-name.</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enofo:get-business-ancestors</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:get-business-ancestors</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Linking output function enofo:get-business-ancestors to input function enoddi:get-business-ancestors.</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
