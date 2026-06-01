@@ -8,9 +8,9 @@
     <packaging>pom</packaging>
     <version>${revision}</version>
     <name>eno</name>
-    
+
     <properties>
-		<revision>2.29.1</revision>
+		<revision>2.29.3</revision>
         <java.version>25</java.version>
         <project.encoding>UTF-8</project.encoding>
     </properties>
@@ -18,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
     </parent>
 
     <modules>
