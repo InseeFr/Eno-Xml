@@ -1345,6 +1345,18 @@
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enofo:exists-suggester-label</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:exists-suggester-label</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Linking output function enofo:exists-suggester-label to input function enoddi:exists-suggester-label</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>enofo:get-suggester-label-name</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -1355,7 +1367,7 @@
       <text:p>Linking output function enofo:get-suggester-label-name to input function enoddi:get-suggester-label-name</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048524">
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048521">
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">

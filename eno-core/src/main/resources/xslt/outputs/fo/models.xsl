@@ -1428,7 +1428,7 @@
 		<xsl:variable name="code-appearance" as="xs:string" select="enofo:get-appearance($source-context)"/>
 		<xsl:variable name="variable-name" as="xs:string">
 			<xsl:choose>
-				<xsl:when test="$code-appearance  = 'suggester'">
+				<xsl:when test="$code-appearance  = 'suggester' and enofo:exists-suggester-label($source-context)">
 					<xsl:call-template name="variable-velocity-name">
 						<xsl:with-param name="variable" select="enofo:get-suggester-label-name($source-context)"/>
 						<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>
@@ -1436,6 +1436,7 @@
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
+					<!-- not a suggester or a suggester without label variable -->
 					<xsl:call-template name="variable-velocity-name">
 						<xsl:with-param name="variable" select="enofo:get-business-name($source-context)"/>
 						<xsl:with-param name="variable-loop" select="enofo:get-business-ancestors($source-context)"/>

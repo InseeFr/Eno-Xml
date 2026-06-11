@@ -1923,6 +1923,18 @@
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>enoddi:exists-suggester-label</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>xs:boolean</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Function that returns if a variable is described for the label of the suggester</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>enoddi:get-suggester-label-name</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
@@ -1930,7 +1942,7 @@
       <text:p>Function that returns the business name of the variable containing the label of a suggester</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048456">
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048455">
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">

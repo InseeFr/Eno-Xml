@@ -1651,6 +1651,17 @@
 
     <xd:doc>
         <xd:desc>
+            <xd:p>Returns something (so true) if exists a variable containing the label of a suggester, which is a calculated variable with formula left_join(suggester_variable, NOMENCLATURE using id, label)</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="d:CodeDomain[r:GenericOutputFormat ='suggester']" mode="enoddi:exists-suggester-label">
+        <xsl:variable name="suggester-id" select="enoddi:get-id(.)"/>
+        <xsl:value-of select="count(//d:GenerationInstruction[descendant::r:SourceParameterReference/r:ID = $suggester-id
+            and starts-with(descendant::r:CommandContent,'left_join(') and ends-with(descendant::r:CommandContent,' using id, label)')]) &gt; 0"/>
+    </xsl:template>
+
+    <xd:doc>
+        <xd:desc>
             <xd:p>The variable containing the label of a suggester is a calculated variable with formula left_join(suggester_variable, NOMENCLATURE using id, label)</xd:p>
         </xd:desc>
     </xd:doc>

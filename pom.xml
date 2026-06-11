@@ -10,7 +10,7 @@
     <name>eno</name>
 
     <properties>
-		<revision>2.29.3</revision>
+		<revision>2.29.4</revision>
         <java.version>25</java.version>
         <project.encoding>UTF-8</project.encoding>
     </properties>
