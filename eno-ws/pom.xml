@@ -23,11 +23,11 @@
 		<javax.activation.version>1.2.0</javax.activation.version>
 		<jaxb-api.version>2.3.1</jaxb-api.version>
 		<jaxb-impl.version>2.3.9</jaxb-impl.version>
-		<jaxb-core.version>4.0.8</jaxb-core.version>
+		<jaxb-core.version>4.0.9</jaxb-core.version>
 		<springdoc-openapi-ui.version>3.0.3</springdoc-openapi-ui.version>
 
 		<!-- Sonar -->
-		<jacoco.version>0.8.14</jacoco.version>	
+		<jacoco.version>0.8.15</jacoco.version>	
 		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
@@ -147,7 +147,7 @@
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
-				<version>5.6.0.6792</version>
+				<version>5.7.0.6970</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
