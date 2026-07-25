@@ -423,7 +423,7 @@
                             <xsl:variable name="current-ancestor" select="$variable-ancestors[last()]"/>
                             <xsl:choose>
                                 <xsl:when test="$loop-navigation//Loop[@name=$current-ancestor]/text() != ''">
-                                    <xsl:value-of select="concat('$!{',$current-ancestor,'-0-')"/>
+                                    <xsl:value-of select="concat('$!{',$current-ancestor,'_0_')"/>
                                 </xsl:when>
                                 <xsl:when test="$variable-type = 'external'">
                                     <xsl:value-of select="concat('${',$current-ancestor,'.')"/>

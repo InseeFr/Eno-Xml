@@ -2680,7 +2680,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2695,7 +2695,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2710,7 +2710,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2725,7 +2725,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2740,7 +2740,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2755,7 +2755,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2770,7 +2770,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2785,7 +2785,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2800,7 +2800,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2815,7 +2815,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2830,7 +2830,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2845,7 +2845,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2860,7 +2860,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2875,7 +2875,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2890,7 +2890,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2905,7 +2905,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2920,7 +2920,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2935,7 +2935,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2950,7 +2950,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2965,7 +2965,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -2980,7 +2980,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -2995,7 +2995,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3010,7 +3010,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3025,7 +3025,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3040,7 +3040,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3055,7 +3055,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3070,7 +3070,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3085,7 +3085,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3100,7 +3100,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3115,7 +3115,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3130,7 +3130,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3145,7 +3145,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3160,7 +3160,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3175,7 +3175,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3190,7 +3190,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3205,7 +3205,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3220,7 +3220,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3235,7 +3235,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3250,7 +3250,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3265,7 +3265,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3280,7 +3280,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3295,7 +3295,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3310,7 +3310,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3325,7 +3325,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3340,7 +3340,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3355,7 +3355,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3370,7 +3370,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3385,7 +3385,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3400,7 +3400,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3415,7 +3415,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3430,7 +3430,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3445,7 +3445,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3460,7 +3460,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3475,7 +3475,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3490,7 +3490,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3505,7 +3505,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3520,7 +3520,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3535,7 +3535,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3550,7 +3550,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3565,7 +3565,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3580,7 +3580,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3595,7 +3595,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3610,7 +3610,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3625,7 +3625,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3640,7 +3640,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3655,7 +3655,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3670,7 +3670,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3685,7 +3685,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3700,7 +3700,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3715,7 +3715,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3730,7 +3730,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3745,7 +3745,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3760,7 +3760,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3775,7 +3775,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3790,7 +3790,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3805,7 +3805,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3820,7 +3820,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3835,7 +3835,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3850,7 +3850,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3865,7 +3865,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3880,7 +3880,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3895,7 +3895,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3910,7 +3910,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3925,7 +3925,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3940,7 +3940,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3955,7 +3955,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -3970,7 +3970,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -3985,7 +3985,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4000,7 +4000,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4015,7 +4015,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4030,7 +4030,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4045,7 +4045,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4060,7 +4060,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4075,7 +4075,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4090,7 +4090,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4105,7 +4105,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4120,7 +4120,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4135,7 +4135,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4150,7 +4150,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4165,7 +4165,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4180,7 +4180,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4195,7 +4195,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4210,7 +4210,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4225,7 +4225,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4240,7 +4240,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4255,7 +4255,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4270,7 +4270,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4285,7 +4285,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4300,7 +4300,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4315,7 +4315,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4330,7 +4330,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4345,7 +4345,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4360,7 +4360,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4375,7 +4375,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4390,7 +4390,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4405,7 +4405,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4420,7 +4420,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4435,7 +4435,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4450,7 +4450,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4465,7 +4465,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4480,7 +4480,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4495,7 +4495,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4510,7 +4510,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4525,7 +4525,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4540,7 +4540,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4555,7 +4555,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4570,7 +4570,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4585,7 +4585,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4600,7 +4600,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4615,7 +4615,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4630,7 +4630,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4645,7 +4645,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4660,7 +4660,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4675,7 +4675,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4690,7 +4690,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4705,7 +4705,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4720,7 +4720,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4735,7 +4735,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4750,7 +4750,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4765,7 +4765,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4780,7 +4780,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4795,7 +4795,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4810,7 +4810,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4825,7 +4825,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4840,7 +4840,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4855,7 +4855,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4870,7 +4870,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4885,7 +4885,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4900,7 +4900,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4915,7 +4915,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4930,7 +4930,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4945,7 +4945,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4960,7 +4960,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -4975,7 +4975,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -4990,7 +4990,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5005,7 +5005,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5020,7 +5020,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5035,7 +5035,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5050,7 +5050,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5065,7 +5065,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5080,7 +5080,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5095,7 +5095,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5110,7 +5110,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5125,7 +5125,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5140,7 +5140,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5155,7 +5155,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5170,7 +5170,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5185,7 +5185,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5200,7 +5200,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5215,7 +5215,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5230,7 +5230,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5245,7 +5245,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5260,7 +5260,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5275,7 +5275,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5290,7 +5290,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5305,7 +5305,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5320,7 +5320,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5335,7 +5335,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5350,7 +5350,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5365,7 +5365,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5380,7 +5380,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS11}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5395,7 +5395,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS12}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5410,7 +5410,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS21}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5425,7 +5425,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS22}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5440,7 +5440,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS31}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5455,7 +5455,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS32}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5470,7 +5470,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS41}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5485,7 +5485,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS42}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5500,7 +5500,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS51}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5515,7 +5515,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS52}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5530,7 +5530,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS61}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5545,7 +5545,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS62}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5560,7 +5560,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS71}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5575,7 +5575,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS72}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5590,7 +5590,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS81}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5605,7 +5605,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS82}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5620,7 +5620,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS91}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5635,7 +5635,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS92}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>
@@ -5650,7 +5650,7 @@
                                     padding="1mm">
                         <fo:block>
                            <fo:block-container height="40mm">
-                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
+                              <fo:block>#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS101}#{else} #{end}</fo:block>
                            </fo:block-container>
                         </fo:block>
                      </fo:table-cell>
@@ -5665,7 +5665,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS-0-FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
+                                        padding="1mm">#{if}($!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102})$!{FAVOURITE_CHARACTERS_0_FAVOURITE_CHARACTERS102}#{else}<fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>
                                  <fo:external-graphic src="mask_number.png"/>#{end}
                               </fo:block>

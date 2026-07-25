@@ -301,6 +301,20 @@
                 <r:Agency><xsl:value-of select="$agency"/></r:Agency>
                 <r:ID><xsl:value-of select="concat('StudyUnit-',enoddi33:get-id($source-context))"/></r:ID>
                 <r:Version><xsl:value-of select="enoddi33:get-version($source-context)"/></r:Version>
+                <xsl:if test="enoddi33:get-serie-uri($source-context) !=''">
+                    <r:SeriesStatement>
+                        <r:SeriesRepositoryLocation><xsl:value-of select="enoddi33:get-serie-uri($source-context)"/></r:SeriesRepositoryLocation>
+                        <r:SeriesName><xsl:value-of select="enoddi33:get-serie-name($source-context)"/></r:SeriesName>
+                        <xsl:choose>
+                            <xsl:when test="enoddi33:get-serie-alternative-name($source-context) !=''">
+                                <r:SeriesAbbreviation><xsl:value-of select="enoddi33:get-serie-alternative-name($source-context)"/></r:SeriesAbbreviation>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <r:SeriesAbbreviation><xsl:value-of select="enoddi33:get-serie-id($source-context)"/></r:SeriesAbbreviation>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </r:SeriesStatement>
+                </xsl:if>
                 <r:ExPostEvaluation/>
                 <d:DataCollection>
                     <r:Agency><xsl:value-of select="$agency"/></r:Agency>

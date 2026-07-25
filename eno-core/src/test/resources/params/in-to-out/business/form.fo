@@ -1606,13 +1606,13 @@
                   </fo:table-row>
                </fo:table-header>
                <fo:table-body>
-#set( $REPARTITION_CA-TotalOccurrenceInt = 0)
+#set( $REPARTITION_CA_TotalOccurrenceInt = 0)
 
-#if (($REPARTITION_CA-TotalOccurrenceInt + 1) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 1) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 1) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 1) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -1697,7 +1697,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -1709,11 +1709,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 2) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 2) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 2) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 2) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -1780,7 +1780,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -1803,7 +1803,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -1815,11 +1815,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 3) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 3) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 3) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 3) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -1886,7 +1886,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -1909,7 +1909,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -1921,11 +1921,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 4) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 4) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 4) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 4) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -1992,7 +1992,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2015,7 +2015,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2027,11 +2027,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 5) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 5) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 5) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 5) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2098,7 +2098,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2121,7 +2121,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2133,11 +2133,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 6) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 6) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 6) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 6) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2204,7 +2204,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2227,7 +2227,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2239,11 +2239,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 7) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 7) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 7) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 7) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2310,7 +2310,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2333,7 +2333,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2345,11 +2345,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 8) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 8) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 8) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 8) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2416,7 +2416,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2439,7 +2439,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2451,11 +2451,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 9) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 9) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 9) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 9) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2522,7 +2522,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2545,7 +2545,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2557,11 +2557,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 10) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 10) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 10) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 10) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2628,7 +2628,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2651,7 +2651,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2663,11 +2663,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 11) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 11) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 11) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 11) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2734,7 +2734,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2757,7 +2757,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2769,11 +2769,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 12) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 12) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 12) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 12) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2840,7 +2840,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2863,7 +2863,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2875,11 +2875,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 13) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 13) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 13) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 13) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -2946,7 +2946,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -2969,7 +2969,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -2981,11 +2981,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 14) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 14) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 14) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 14) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -3052,7 +3052,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -3075,7 +3075,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
@@ -3087,11 +3087,11 @@
                         </fo:block>
                      </fo:table-cell>
                   </fo:table-row>
-#if (($REPARTITION_CA-TotalOccurrenceInt + 15) % 19 eq 0)
+#if (($REPARTITION_CA_TotalOccurrenceInt + 15) % 19 eq 0)
 </fo:table-body>
             </fo:table>
          </fo:block>
-#set ($DynamicArrayPage = 1 + ($REPARTITION_CA-TotalOccurrenceInt + 15) / 19)
+#set ($DynamicArrayPage = 1 + ($REPARTITION_CA_TotalOccurrenceInt + 15) / 19)
 <fo:block page-break-inside="avoid"
                    id="REPARTITION_CA-$DynamicArrayPage"
                    page-break-after="always">
@@ -3158,7 +3158,7 @@
                                     border-style="solid"
                                     padding="1mm">
                         <fo:block>
-                           <fo:block>#{if}($!{REPARTITION_CA-0-REPARTITION_CA1})$!{REPARTITION_CA-0-REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
+                           <fo:block>#{if}($!{REPARTITION_CA_0_REPARTITION_CA1})$!{REPARTITION_CA_0_REPARTITION_CA1}#{else}<fo:block-container height="8mm" width="50mm">
                                  <fo:block> </fo:block>
                               </fo:block-container>#{end}</fo:block>
                         </fo:block>
@@ -3181,7 +3181,7 @@
                                         color="black"
                                         font-weight="normal"
                                         font-size="10pt"
-                                        padding="1mm">#{if}($!{REPARTITION_CA-0-REPARTITION_CA3})$!{REPARTITION_CA-0-REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
+                                        padding="1mm">#{if}($!{REPARTITION_CA_0_REPARTITION_CA3})$!{REPARTITION_CA_0_REPARTITION_CA3}#{else}<fo:inline-container width="27mm">
                                     <fo:block-container height="8mm" width="27mm">
                                        <fo:block>
 									 
