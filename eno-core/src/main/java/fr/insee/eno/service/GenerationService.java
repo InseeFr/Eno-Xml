@@ -1,6 +1,5 @@
 package fr.insee.eno.service;
 
-import com.google.inject.Inject;
 import fr.insee.eno.generation.Generator;
 import fr.insee.eno.postprocessing.Postprocessor;
 import fr.insee.eno.preprocessing.DDIMappingPreprocessor;
@@ -29,7 +28,6 @@ public class GenerationService {
 	private byte[] specificTreatment;
 	private byte[] mapping;
 
-	@Inject
 	public GenerationService(final Preprocessor[] preprocessors, final Generator generator,
 			final Postprocessor[] postprocessors) {
 		this.preprocessors = preprocessors;
@@ -37,7 +35,6 @@ public class GenerationService {
 		this.postprocessors = postprocessors;
 	}
 
-	@Inject
 	public GenerationService(final Preprocessor preprocessor, final Generator generator,
 			final Postprocessor[] postprocessors) {
 		this.preprocessors = new Preprocessor[] { preprocessor };
@@ -45,7 +42,6 @@ public class GenerationService {
 		this.postprocessors = postprocessors;
 	}
 
-	@Inject
 	public GenerationService(final Preprocessor preprocessor, final Generator generator,
 			final Postprocessor postprocessor) {
 		this.preprocessors = new Preprocessor[] { preprocessor };
