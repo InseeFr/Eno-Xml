@@ -1645,7 +1645,7 @@
 					then : blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c' or !${var_name}) blibli
 					else : blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c') blibli
 				-->
-				<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\) *in *\{{(.+)\}}(.*)$">
+				<xsl:analyze-string select="$formula" regex="^(.*)nvl *\( *{$variable-initial-name} *, *{$quot}([^{$quot}]*){$quot} *\) *in *\{{(.+?)\}}(.*)$">
 					<xsl:matching-substring>
 						<xsl:variable name="formula">
 							<xsl:value-of select="concat(regex-group(1),' (',$variable-business-name,' eq ')"/>
@@ -1665,7 +1665,8 @@
 						<!-- blabla¤var_id¤ in {"a","b","c")blibli
 							becomes:
 							blabla (${var_name} eq 'a' or ${var_name} eq 'b' or ${var_name} eq 'c') blibli-->
-						<xsl:analyze-string select="$formula" regex="^(.*){$variable-initial-name} *in *\{{(.+)\}}(.*)$">
+						<!-- Je vais devoir créer une variable correspondant à ma variable à exclure close-brace -->
+						<xsl:analyze-string select="$formula" regex="^(.*){$variable-initial-name} *in *\{{(.+?)\}}(.*)$">
 							<xsl:matching-substring>
 								<xsl:call-template name="replaceVariablesInFormula">
 									<xsl:with-param name="formula">
