@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <!-- courrier ImprimFIP -->
     <!-- courrier Coltrane v2/Platine -->
     <fo:layout-master-set>
         
@@ -30,10 +31,13 @@
     
     <fo:page-sequence font-family="Liberation Sans" font-size="8pt" master-reference="medCOLT">
         
-        <!-- ZONE LIGNE TECHNIQUE -->
+        <!--  Variables obligatoires, non utilisées pour le rendu du PDF.
+        Conservées dans le FO uniquement pour la génération du schéma XSD.
+        Ne pas supprimer sans analyser l'impact sur la génération du XSD
+        et les traitements qui en dépendent (ex. fichier plat).  -->        
         <fo:static-content flow-name="xsl-region-before-courrier">
-            <fo:block position="absolute" margin-top="5mm" margin-left="10mm" margin-right="10mm" margin-bottom="10mm" color="white">
-                &lt;![CDATA[#]]&gt;&lt;![CDATA[#]]&gt;&lt;![CDATA[#]]&gt;DS${NumeroDocument}col${data-IdEdition}
+            <fo:block position="absolute" margin-top="5mm" margin-left="10mm" margin-right="10mm" margin-bottom="10mm" font-size="5pt" color="white">
+                ${Barcode} ${BddAdressePosteeL7} $!{InitAccuseReception}
             </fo:block>
         </fo:static-content>
         
@@ -48,7 +52,6 @@
                 #set($BddAdressePosteeL4 = ${BddAdressePosteeL4})
                 #set($BddAdressePosteeL5 = ${BddAdressePosteeL5})
                 #set($BddAdressePosteeL6 = ${BddAdressePosteeL6})
-                #set($BddAdressePosteeL7 = ${BddAdressePosteeL7})
                 
                 <!-- Mise en place du REGEX pour chaque type de caractère accentué -->
                 #set($RegexA = "[àáâãäåÀÁÂÃÄÅ]")
@@ -67,75 +70,84 @@
                 #set($BddAdressePosteeL4 = $BddAdressePosteeL4.replaceAll($RegexA, 'a').replaceAll($RegexE, 'e').replaceAll($RegexI, 'i').replaceAll($RegexO, 'o').replaceAll($RegexU, 'u').replaceAll($RegexY, 'y').replaceAll($RegexC, 'c').replaceAll($RegexN, 'n'))
                 #set($BddAdressePosteeL5 = $BddAdressePosteeL5.replaceAll($RegexA, 'a').replaceAll($RegexE, 'e').replaceAll($RegexI, 'i').replaceAll($RegexO, 'o').replaceAll($RegexU, 'u').replaceAll($RegexY, 'y').replaceAll($RegexC, 'c').replaceAll($RegexN, 'n'))
                 #set($BddAdressePosteeL6 = $BddAdressePosteeL6.replaceAll($RegexA, 'a').replaceAll($RegexE, 'e').replaceAll($RegexI, 'i').replaceAll($RegexO, 'o').replaceAll($RegexU, 'u').replaceAll($RegexY, 'y').replaceAll($RegexC, 'c').replaceAll($RegexN, 'n'))
-                #set($BddAdressePosteeL7 = $BddAdressePosteeL7.replaceAll($RegexA, 'a').replaceAll($RegexE, 'e').replaceAll($RegexI, 'i').replaceAll($RegexO, 'o').replaceAll($RegexU, 'u').replaceAll($RegexY, 'y').replaceAll($RegexC, 'c').replaceAll($RegexN, 'n'))
                 
-                <!-- ZONE LOGOS -->
-                <fo:block-container absolute-position="absolute" left="5mm" top="2mm" width="180mm" height="25mm">
-                    <fo:block>
-                        <fo:external-graphic src="${Enq_ImageLogos}" width="100%" height="100%" content-height="scale-to-fit" content-width="scale-to-fit" scaling="uniform"/>
+                <!-- ZONE LOGO GAUCHE RF -->
+                <fo:block-container absolute-position="absolute" left="7mm" top="6.65mm" width="30mm" height="25.35mm" overflow="hidden">
+                    <fo:block>                        
+                        <fo:external-graphic src="imprimFIP/Republique_Francaise_25_NB_100.jpg" height="25mm" content-width="scale-to-fit"/>                        
                     </fo:block>
-                </fo:block-container>          
+                </fo:block-container>
+                
+                <!-- ZONE RESERVE IMPRIMFIP HAUT A DROITE -->
+                <fo:block-container absolute-position="absolute" left="135mm" top="0mm" width="55mm" height="20mm" overflow="hidden">
+                    <fo:block/>
+                </fo:block-container> 
+                
+                <!-- CODIFICATION IMPRIMFIP -->
+                <fo:block-container absolute-position="absolute" left="135mm" top="0mm" width="55mm" height="6.5mm" overflow="hidden">
+                    <fo:block text-align="right" display-align="before" font-size="8pt" margin="2mm">IS_PLAE_MED</fo:block>
+                </fo:block-container>
+                
+                <!-- ZONE LOGOS DROITE INSEE SSM -->
+                <fo:block-container absolute-position="absolute" right="7mm" top="5.65mm" width="85mm" height="14.35mm" overflow="hidden">
+                    <fo:block text-align="right">
+                        <fo:external-graphic src="imprimFIP/${Enq_ImageLogos}" height="14mm" content-width="scale-to-fit"/>
+                    </fo:block>                                   
+                </fo:block-container>
                 
                 <!-- ZONE RESERVE ADRESSE -->
-                <fo:block-container absolute-position="absolute" left="80mm" top="33mm" width="110mm" height="50mm" overflow="hidden">
+                <fo:block-container absolute-position="absolute" left="70mm" top="20mm" width="117mm" height="60mm" overflow="hidden">
                     <fo:block/>
-                </fo:block-container>   
+                </fo:block-container>    
                 
-                <!-- ZONE POSTALE TOTALE C5 (CIP) -->
-                <fo:block-container absolute-position="absolute" left="80mm" top="26mm" width="120mm" height="65mm" overflow="hidden">
+                <!-- ZONE Expéditeur -->
+                <fo:block-container absolute-position="absolute" left="91mm" top="25mm" width="92mm" height="14mm" overflow="hidden">
                     <fo:block/>
-                </fo:block-container>
-                  
-                <!-- ZONE DATAMATRIX ALLIAGE -->
-                #if($!{InitAccuseReception}!='' and $!{InitAccuseReception}!='oui')
-                <fo:block-container absolute-position="absolute" left="100mm" top="37.8mm" width="11.88mm" height="11.88mm" overflow="hidden">
-                    <fo:block>
-                        <fo:instream-foreign-object>
-                            <barcode:barcode xmlns:barcode="http://barcode4j.krysalis.org/ns" message="${Barcode}" orientation="0">
-                                <barcode:datamatrix>
-                                    <barcode:module-width>0.53mm</barcode:module-width>
-                                    <barcode:quiet-zone enabled="false">0mw</barcode:quiet-zone>
-                                    <barcode:min-symbol-size>22x22</barcode:min-symbol-size>
-                                    <barcode:max-symbol-size>22x22</barcode:max-symbol-size>
-                                </barcode:datamatrix>
-                            </barcode:barcode>
-                        </fo:instream-foreign-object>
-                    </fo:block>
-                </fo:block-container>
-                #end
+                </fo:block-container>                 
                 
                 <!-- ZONE ADRESSE -->
-                <fo:block-container absolute-position="absolute" left="100mm" top="50mm" width="82mm" height="25.5mm" overflow="hidden" font-size="10pt" display-align="after">
-                    <fo:block font-family="Lucida Console" text-transform="uppercase">
+                <fo:block-container absolute-position="absolute" left="91mm" top="55mm" width="92mm" height="22mm" overflow="hidden" font-size="9pt" display-align="after">
+                    <fo:block font-family="Liberation Sans" text-transform="uppercase">
                         <fo:inline-container margin="0mm">
-                            <fo:block line-height="10pt">${BddAdressePosteeL1}</fo:block>
-                            <fo:block line-height="10pt">$!{BddAdressePosteeL2}</fo:block>
-                            <fo:block line-height="10pt">${BddAdressePosteeL3}</fo:block>
-                            <fo:block line-height="10pt">$!{BddAdressePosteeL4}</fo:block>
-                            <fo:block line-height="10pt">$!{BddAdressePosteeL5}</fo:block>
-                            <fo:block line-height="10pt">${BddAdressePosteeL6}</fo:block>
-                            <fo:block line-height="10pt">${BddAdressePosteeL7}</fo:block>
+                            <fo:block line-height="9pt">${BddAdressePosteeL1}</fo:block>
+                            <fo:block line-height="9pt">$!{BddAdressePosteeL2}</fo:block>
+                            <fo:block line-height="9pt">$!{BddAdressePosteeL3}</fo:block>
+                            <fo:block line-height="9pt">${BddAdressePosteeL4}</fo:block>
+                            <fo:block line-height="9pt">$!{BddAdressePosteeL5}</fo:block>
+                            <fo:block line-height="9pt">${BddAdressePosteeL6}</fo:block>                      
                         </fo:inline-container>
                     </fo:block>
-                </fo:block-container>               
-                
-                <!-- ZONE RESERVE INTEGRALITE -->
-                <fo:block-container absolute-position="absolute" left="187mm" top="75mm" width="13mm" height="22mm" overflow="hidden" font-size="10pt">
-                    <fo:block/>
                 </fo:block-container>
                 
-                <!-- ZONE DATAMATRIX MODE LIVRET -->
-                <fo:block-container absolute-position="absolute" right="182mm" top="237mm" width="16mm" height="16mm" overflow="hidden" font-size="10pt">
+                <!-- ZONE RESERVE DROITE -->
+                <fo:block-container absolute-position="absolute" left="190mm" width="10mm" height="187mm" overflow="hidden">
                     <fo:block/>
+                </fo:block-container>
+                <fo:block-container absolute-position="absolute" top="40mm" left="187mm" width="13mm" height="24mm" overflow="hidden">
+                    <fo:block/>
+                </fo:block-container>             
+                
+                <!-- ZONE RESERVE IMPRIMFIP BAS -->
+                <fo:block-container absolute-position="absolute" left="0mm" top="267mm" width="20mm" height="10mm">
+                    <fo:table>
+                        <fo:table-column column-width="20mm"/>
+                        <fo:table-body>
+                            <fo:table-row>
+                                <fo:table-cell display-align="center" text-align="center" height="10mm">
+                                    <fo:block font-weight="bold">&lt;![CDATA[#]]&gt;&lt;![CDATA[#]]&gt;&lt;![CDATA[#]]&gt;</fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </fo:table-body>
+                    </fo:table>                
                 </fo:block-container>
                 
                 <!-- ZONE TITRE COURRIER -->
-                <fo:block-container absolute-position="absolute" left="1mm" top="38mm" width="78mm" height="100%" overflow="hidden" font-size="10pt">
+                <fo:block-container absolute-position="absolute" left="0.5mm" top="41mm" width="69.5mm" height="100%" overflow="hidden" font-size="10pt">
                     <fo:block line-height="12pt" font-weight="bold" text-align="center">MISE EN DEMEURE #if($!{InitAccuseReception}=='oui')avec accusé de réception#end</fo:block>
                 </fo:block-container>                
                 
                 <!-- ZONE CONTACT -->
-                <fo:block-container absolute-position="absolute" left="1mm" top="50.5mm" width="78mm" height="100%" overflow="hidden">
+                <fo:block-container absolute-position="absolute" left="0.5mm" top="50.5mm" width="69.5mm" height="100%" overflow="hidden">
                     <fo:block margin-left="0.01mm" margin-right="0.01mm">
                         <fo:inline-container>
                             <fo:block font-size="11pt" font-weight="bold">
@@ -209,7 +221,7 @@
                 </fo:block-container>
 
                 <!-- ZONE COURRIER -->
-                <fo:block-container absolute-position="absolute" left="9mm" top="98mm" width="179mm" height="100%" overflow="hidden" text-align="justify" font-size="9pt">
+                <fo:block-container absolute-position="absolute" left="9mm" top="88mm" width="179mm" height="179mm" overflow="hidden" text-align="justify" font-size="9pt">
                             
                     <fo:block text-align="right" font-size="10pt">
                         Paris, le ${DateEdition}
@@ -251,11 +263,11 @@
                         conformément à la loi de 1951 sur l’obligation en matière de statistique.
                     </fo:block>
                     <fo:block margin-top="3mm">
-                        Aussi, <fo:inline font-weight="bold">je vous prie</fo:inline>#if(${BddQuestionnaire}==0) <fo:inline font-weight="bold">de remplir dans les délais impartis le questionnaire 
-                        par internet selon les modalités précisées au verso de cette lettre</fo:inline>. 
+                        Aussi, je vous prie#if(${BddQuestionnaire}==0) de remplir dans les délais impartis le questionnaire 
+                        par internet selon les <fo:inline font-weight="bold">modalités</fo:inline> précisées <fo:inline font-weight="bold">au verso</fo:inline> de cette lettre. 
                         S’il vous est matériellement impossible de répondre en ligne, merci de bien vouloir prendre contact avec notre service d'assistance 
                         dont les coordonnées figurent dans l’en-tête de cette lettre. Ce dernier se tient également à votre disposition pour répondre à vos questions 
-                        en cas de besoin.#else soit de répondre à cette enquête par internet selon les modalités précisées au verso de cette lettre soit de compléter le questionnaire joint. 
+                        en cas de besoin.#else soit de répondre à cette enquête par internet selon les <fo:inline font-weight="bold">modalités</fo:inline> précisées <fo:inline font-weight="bold">au verso</fo:inline> de cette lettre soit de compléter le questionnaire joint. 
                         Notre assistance se tient à votre disposition pour répondre à vos questions en cas de besoin.#end
                     </fo:block>
                     <fo:block margin-top="3mm">
@@ -302,7 +314,7 @@
                 </fo:block-container>
                 
                 <!-- ZONE NOTE DE BAS DE PAGE -->
-                <fo:block-container absolute-position="absolute" left="9mm" top="273mm" width="179mm" height="100%" overflow="hidden">
+                <fo:block-container absolute-position="absolute" left="9mm" top="263mm" width="179mm" height="4mm" overflow="hidden">
                     <fo:block>
                         (*) Loi n°51-711 du 7 juin 1951 modifiée. Décret n° 2009-318 du 20 mars 2009.
                     </fo:block>
@@ -315,51 +327,26 @@
                 
                 <fo:block/>
                 
-                <!-- ZONE NOTICE -->
-                <fo:block-container absolute-position="absolute" left="20mm" top="20mm" width="150mm" height="100%" overflow="hidden"
-                                    font-family="Liberation Sans" font-size="9pt" text-align="justify" border="black solid 0.5pt" padding="5mm">
-                        
-                    <fo:block text-align="center" font-weight="bold" font-size="10pt">
-                        Comment répondre à l'enquête par internet&#160;?
+                <!-- Comment répondre -->
+                
+                <fo:block-container absolute-position="absolute" left="1mm" top="5mm" width="188mm" height="100%" text-align="justify">
+                    <fo:block>
+                        <fo:external-graphic src="CommentRepondreSansMdpEntreprises.jpg" width="100%" height="100%" content-height="scale-to-fit" content-width="scale-to-fit" scaling="uniform"/>  
+                    </fo:block>
+                </fo:block-container>
+                
+                <!-- Variables positionnées bloc container superposé à "Comment répondre" -->
+                
+                <fo:block-container absolute-position="absolute" left="1mm" top="10mm" width="188mm" height="100%" font-size="8pt" text-align="justify">
+                    
+                    <fo:block margin-top="19.1mm" margin-left="25mm" font-size="11pt" font-weight="bold">
+                        ${BddLienPlatineEnq}
+                    </fo:block>
+                    <fo:block margin-top="38.3mm" margin-left="63mm" font-size="11pt" font-weight="bold">
+                        ${BddIdentifiantContact}
                     </fo:block>
                     
-                    <fo:block margin-top="5mm">
-                        Pour répondre à l'enquête statistique#if((${BddFrequence}!='annuelle') and (${BddFrequence}!='pluriannuelle'))
-                        ${BddFrequence}#end ${BddLibelleLong}, il convient de vous connecter sur le site sécurisé de réponse aux enquêtes de la Statistique 
-                        publique&#160;: <fo:inline keep-together.within-line="always" font-weight="bold">${BddLienPlatineEnq}</fo:inline>. 
-                        Cette adresse est à inscrire dans la barre de navigation de votre navigateur.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        Il vous suffit ensuite de vous authentifier à l’aide de vos éléments de connexion.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        Lors de la saisie de vos éléments de connexion, merci de faire attention à bien respecter les minuscules et majuscules.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm" font-weight="bold">
-                        Votre identifiant de connexion ${BddIdentifiantContact} reste inchangé.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        Le mot de passe précédemment communiqué par voie postale étant à usage unique, si vous vous êtes déjà authentifié sur le site de réponse à 
-                        l'enquête, vous avez dû le changer lors de votre première connexion.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        En cas de perte ou d'oubli de votre mot de passe, vous pouvez demander son renouvellement en ligne sur le site de réponse aux enquêtes 
-                        de la Statistique publique (rubrique «&#160;Mot de passe oublié&#160;» du site <fo:inline keep-together.within-line="always" font-weight="bold">${BddLienPlatineEnq}</fo:inline> ).
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        En cas de trop nombreuses tentatives d’authentification, votre compte peut être momentanément  bloqué, pour des raisons de sécurité. Dans ce cas, avant de 
-                        vous authentifier à nouveau, veuillez patienter quelques minutes au terme desquelles le compte sera automatiquement débloqué.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        Une fois authentifié, vous pourrez remplir votre questionnaire en toute sécurité dans un environnement protégé.
-                    </fo:block>
-                    <fo:block margin-top="3.5mm">
-                        Pour toutes questions techniques (accès au site de réponse en ligne, éléments de connexion, affichage du questionnaire, etc.), 
-                        vous pouvez contacter notre service d'assistance technique à l'aide du formulaire disponible dans la rubrique «&#160;Contacter l'assistance&#160;» sur le site de 
-                        réponse aux enquêtes de la Statistique publique.
-                    </fo:block>
-
-                </fo:block-container>
+                </fo:block-container> 
                 
                 <!-- ZONE CADRE LEGAL -->
                 <fo:block-container absolute-position="absolute" left="5mm" top="210mm" width="180mm" height="100%" overflow="hidden" font-size="7pt" text-align="justify" border="solid black 0.5pt" padding="1mm">
