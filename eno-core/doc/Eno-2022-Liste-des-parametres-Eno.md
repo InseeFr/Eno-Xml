@@ -58,7 +58,7 @@ Vous trouverez le paramétrage par défaut via le web-service d'Eno-WS :
 |               Table/Row/DefaultSize| *champ nombre entier*|  19|Nombre de lignes maximum par page pour les tableaux et tableaux dynamiques.|
 |            Capture/Numeric|manual, optical|default : manual, business et household : optical|Saisie optique (précasage) ou manuelle (champ unique pour les numériques, sans distinction du nombre de positions).|
 |         PageBreakBetween||vide |Saut de page : après chaque module ou sans saut de page « forcé »|
-|         AccompanyingMail|vide ou entreeCOL, ouvertureCOL, relanceCOL, medCOL, cnrCOL, accompagnementCOL|vide |Entreprises : choix du courrier d’accompagnement|
+|         AccompanyingMail|vide ou entreeCOL, ouvertureCOL, relanceCOL, medCOL, cnrCOL, accompagnementCOL, entreeENT, ouvertureENT, relanceENT, medENT, cnrENT, accompagnementENT|vide |Entreprises : choix du courrier d’accompagnement|
 |         Style||vide |Exceptionnel : appliquer un style|
 
 

@@ -353,17 +353,23 @@
             <xs:enumeration value=""/>
             <xs:enumeration value="accompagnementCOL"/>
             <xs:enumeration value="accompagnementCOLT"/>
+            <xs:enumeration value="accompagnementENT"/>
             <xs:enumeration value="cnrCOL"/>
             <xs:enumeration value="cnrCOLT"/>
+            <xs:enumeration value="cnrENT"/>
             <xs:enumeration value="entreeCOL"/>
             <xs:enumeration value="entreeCOLT"/>
+            <xs:enumeration value="entreeENT"/>
             <xs:enumeration value="medCOL"/>
             <xs:enumeration value="medCOLT"/>
+            <xs:enumeration value="medENT"/>
             <xs:enumeration value="ouvertureCOL"/>
             <xs:enumeration value="ouvertureCOLT"/>
+            <xs:enumeration value="ouvertureENT"/>
             <xs:enumeration value="relanceCOL"/>
             <xs:enumeration value="relanceCOLEM"/>
             <xs:enumeration value="relanceCOLT"/>
+            <xs:enumeration value="relanceENT"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
