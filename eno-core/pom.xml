@@ -116,7 +116,7 @@
 		<slf4j.version>2.0.20</slf4j.version>
 		<!-- Test dependencies -->
 		<xmlunit.version>2.14.0</xmlunit.version>
-		<apache-commons.version>3.21.0</apache-commons.version>
+		<apache-commons.version>3.22.0</apache-commons.version>
 		<log4j-slf4j2.version>2.26.1</log4j-slf4j2.version>
 		<!-- Build plugins -->
 		<source.plugin.version>3.4.0</source.plugin.version>
@@ -286,7 +286,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>3.6.2</version>
+				<version>3.8.0</version>
 				<executions>
 					<execution>
 						<id>add-source</id>
@@ -305,7 +305,7 @@
 			<plugin> <!-- Replace this plugin? -->
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.6.4</version>
+				<version>3.7.0</version>
 				<executions>
 					<execution>
 						<phase>process-classes</phase>
